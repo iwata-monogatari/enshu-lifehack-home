@@ -1,0 +1,16 @@
+# 遠州ライフハック 親サイト（enshu-lifehack.com）
+# 静的アセット配信のみ（磐田と同じ assets-only 構成）。
+name = "enshu-lifehack-home"
+compatibility_date = "2025-06-01"
+
+# カスタムドメイン（apex と www、どちらも同じトップを配信）。
+# www は index.html の canonical で apex を正典とする。
+# 注意: TOMLでは [assets] テーブルより前(トップレベル)に置くこと。
+routes = [
+  { pattern = "enshu-lifehack.com", custom_domain = true },
+  { pattern = "www.enshu-lifehack.com", custom_domain = true }
+]
+
+[assets]
+directory = "./public"
+not_found_handling = "404-page"

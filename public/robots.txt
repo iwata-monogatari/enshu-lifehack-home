@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enshu-lifehack.com/sitemap.xml

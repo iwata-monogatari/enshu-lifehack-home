@@ -1,0 +1,12 @@
+{
+  "name": "enshu-lifehack-home",
+  "version": "1.0.0",
+  "private": true,
+  "description": "遠州ライフハック 親サイト (Cloudflare Workers Static Assets)",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
