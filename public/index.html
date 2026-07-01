@@ -1,8 +1,12 @@
 <!doctype html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>遠州ライフハック｜遠州エリアの暮らし・手続き・防災・介護・住まいを市民目線で整理</title>
-<meta name="description" content="遠州ライフハックは、遠州エリア（静岡県西部）の市町の公式情報をもとに、暮らしの手続き・防災・子育て・介護・住まいの情報を市民目線で整理する生活ナビです。現在は磐田ライフハックを公開中。最新・正確な情報は各市町の公式サイトをご確認ください。">
+<title>遠州ライフハック｜遠州エリアの暮らし・手続き・防災・介護・住まいの生活ナビ</title>
+<meta name="description" content="遠州ライフハックは、遠州エリア（静岡県西部）の暮らし・手続き・防災・子育て・介護・住まいに関する公式情報を、暮らしの場面ごとに整理し、各市町の公式ページへ案内する生活ナビです。">
+<meta property="og:title" content="遠州ライフハック｜遠州エリアの暮らしと手続きを、迷わず進めるために">
+<meta property="og:description" content="遠州エリアで暮らす方が、必要な手続きや相談先にすばやくたどり着けるよう、各市町の公式情報を暮らしの場面ごとに整理してご案内します。">
 <link rel="canonical" href="https://enshu-lifehack.com/">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <style>
 :root{--green:#1f6f54;--green-d:#15503c;--bg:#f6f7f5;--card:#fff;--ink:#222;--mut:#667;--line:#e3e6e1}
@@ -39,55 +43,229 @@ footer.site .wrap{padding:22px 16px}
 footer.site b{color:#fff}
 .muted{color:var(--mut)}
 @media (min-width:760px){html{font-size:16px}}
+.company-support {
+  margin: 56px auto 32px;
+  padding: 32px 24px;
+  border-radius: 20px;
+  background: #f8faf7;
+  border: 1px solid rgba(46, 80, 60, 0.14);
+}
+.company-support h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+  line-height: 1.5;
+}
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+.support-card {
+  padding: 24px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid rgba(46, 80, 60, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+.support-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+}
+.support-contact {
+  margin-top: 16px;
+  line-height: 1.8;
+}
+.support-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+.support-links a {
+  text-decoration: none;
+}
+.support-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid rgba(46, 80, 60, 0.22);
+  color: var(--green-d);
+  background: transparent;
+  transition: all 0.2s ease;
+}
+.support-button:hover {
+  background: var(--green);
+  color: #fff;
+  border-color: var(--green);
+  text-decoration: none;
+}
+.soon-favicon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-left: 6px;
+  border-radius: 3px;
+}
+.foot-favicon {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  vertical-align: middle;
+  margin-left: 4px;
+  border-radius: 2px;
+}
+.municipality-emoji,
+.support-emoji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.municipality-emoji {
+  margin-right: 0.35rem;
+}
+.support-emoji {
+  margin-right: 0.3rem;
+}
+@media (max-width: 760px) {
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+  .company-support {
+    padding: 24px 18px;
+  }
+}
 </style>
 </head><body>
 <header class="site"><div class="wrap">
   <span class="logo">遠州ライフハック</span>
   <span class="tag">遠州エリアの暮らしナビ</span>
 </div></header>
-<div class="disclaimer"><div class="wrap">⚠ 本サイトは各市町の公式サイトではありません。最新・正確な情報は各市町の公式サイトをご確認ください。</div></div>
+<div class="disclaimer"><div class="wrap"><span aria-hidden="true">⚠</span> 本サイトは各市町の公式サイトではありません。最新・正確な情報は、必ず各市町の公式サイトでご確認ください。</div></div>
 
 <main><div class="wrap">
 
   <section class="hero">
-    <h1>遠州エリアの暮らしを、市民目線で。</h1>
-    <p>遠州ライフハックは、遠州エリア（静岡県西部）の暮らし・手続き・防災・子育て・介護・住まいに関する公式情報を、市民目線で整理してご案内する生活ナビです。</p>
-    <p class="muted">情報は転載ではなく、各市町の公式ページへ最終的にご案内します。</p>
+    <h1>遠州エリアの暮らしと手続きを、迷わず進めるために。</h1>
+    <p>遠州ライフハックは、遠州エリア（静岡県西部）で暮らす方が、必要な手続きや相談先にすばやくたどり着けるよう、各市町の公式情報を暮らしの場面ごとに整理する生活ナビです。</p>
+    <p>引っ越し、子育て、防災、税金、介護、住まい、相続、空き家のこと。「どのページを見ればいいのか」「何から確認すればいいのか」が分かりにくい情報を、目的別にたどれる形に整え、最終的には必ず各市町の公式ページへご案内します。</p>
+    <p class="muted">本サイトは公式情報の転載サイトではありません。暮らしの中で必要になる情報を探しやすく整理し、正確な確認先として各市町の公式ページへつなぐことを目的としています。</p>
   </section>
 
   <h2 class="sec">公開中</h2>
   <a class="live-card" href="https://iwata.enshu-lifehack.com/">
-    <span class="ic">🌱</span>
+    <span class="ic municipality-emoji" aria-hidden="true">🌱</span>
     <span class="body">
       <span class="badge-live">公開中</span>
-      <div class="ttl">磐田ライフハック</div>
-      <div class="sub">磐田市の暮らし・手続き・防災・介護・住まいを市民目線で整理</div>
+      <div class="ttl">磐田ライフハック<img src="/favicons/iwata.svg" alt="" aria-hidden="true" class="soon-favicon"></div>
+      <div class="sub">磐田市の暮らしと手続きを、必要な場面から探せる生活ナビ</div>
     </span>
-    <span class="arw">›</span>
+    <span class="arw" aria-hidden="true">›</span>
   </a>
 
   <h2 class="sec">近日運用予定</h2>
   <div class="soon-grid">
-    <div class="soon"><div class="name">袋井ライフハック</div><span class="state">準備中</span></div>
-    <div class="soon"><div class="name">掛川ライフハック</div><span class="state">準備中</span></div>
-    <div class="soon"><div class="name">森町ライフハック</div><span class="state">準備中</span></div>
-    <div class="soon"><div class="name">菊川市ライフハック</div><span class="state">準備中</span></div>
-    <div class="soon"><div class="name">御前崎市ライフハック</div><span class="state">準備中</span></div>
-    <div class="soon"><div class="name">湖西市ライフハック</div><span class="state">準備中</span></div>
-    <div class="soon"><div class="name">浜松市中央区ライフハック</div><span class="state">準備中</span></div>
-    <div class="soon"><div class="name">浜松市浜名区ライフハック</div><span class="state">準備中</span></div>
-    <div class="soon"><div class="name">浜松市天竜区ライフハック</div><span class="state">準備中</span></div>
+    <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🍈</span><span>袋井ライフハック</span><img src="/favicons/fukuroi.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
+    <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🍵</span><span>掛川ライフハック</span><img src="/favicons/kakegawa.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
+    <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🌲</span><span>森町ライフハック</span><img src="/favicons/mori.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
+    <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🌼</span><span>菊川市ライフハック</span><img src="/favicons/kikugawa.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
+    <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🌊</span><span>御前崎市ライフハック</span><img src="/favicons/omaezaki.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
+    <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🌅</span><span>湖西市ライフハック</span><img src="/favicons/kosai.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
+    <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🎹</span><span>浜松市中央区ライフハック</span><img src="/favicons/hamamatsu-chuo.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
+    <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🍊</span><span>浜松市浜名区ライフハック</span><img src="/favicons/hamamatsu-hamana.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
+    <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🌲</span><span>浜松市天竜区ライフハック</span><img src="/favicons/hamamatsu-tenryu.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
   </div>
 
   <div class="note">
     各市町版は順次公開していきます。まずは <a href="https://iwata.enshu-lifehack.com/">磐田ライフハック</a> をご利用ください。
   </div>
 
+  <section class="support-section company-support" aria-labelledby="support-title">
+    <h2 id="support-title">お困りのときは、相談先の一つとしてご利用ください</h2>
+
+    <p>
+      相続した実家や空き家、介護、住まいに関する悩みは、行政手続きだけでは整理しきれないことがあります。
+      遠州ライフハックで公式情報を確認したうえで、個別の事情について相談したい場合は、地域の相談先の一つとしてご利用ください。
+    </p>
+
+    <div class="support-grid">
+      <article class="support-card">
+        <h3><span class="support-emoji" aria-hidden="true">🏠</span>家・住まいについて相談したい</h3>
+        <p>
+          富士ヶ丘サービスでは、相続した実家・空き家・親の家の整理についてご相談をお受けしています。
+          介護と不動産の両方に関わる立場から、売却・管理・解体・今後の住まい方について整理のお手伝いをしています。
+        </p>
+        <p class="support-contact">
+          <strong>富士ヶ丘サービス 不動産部</strong><br>
+          TEL：0538-31-3308
+        </p>
+        <p class="support-links">
+          <a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">ホームページ ↗</a>
+          <a href="https://line.me/" target="_blank" rel="noopener">LINE公式 ↗</a>
+        </p>
+        <p>
+          <a class="support-button" href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">
+            相続した実家・空き家について相談する
+          </a>
+        </p>
+      </article>
+
+      <article class="support-card">
+        <h3><span class="support-emoji" aria-hidden="true">❤️</span>介護・高齢者について相談したい</h3>
+        <p>
+          ケアマネジャー、介護保険、介護施設、高齢者支援などのご相談を承っています。
+          必要に応じて、相談先の一つとしてご利用ください。
+        </p>
+        <p class="support-contact">
+          <strong>富士ヶ丘サービス 介護部門</strong><br>
+          居宅介護支援 TEL：0538-31-5551<br>
+          サ高住 見付 TEL：0538-31-3308<br>
+          サ高住 安久路 TEL：0538-37-1010
+        </p>
+        <p class="support-links">
+          <a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">ホームページ ↗</a>
+        </p>
+        <p>
+          <a class="support-button" href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">
+            介護の相談先を見る
+          </a>
+        </p>
+      </article>
+    </div>
+  </section>
+
 </div></main>
 
 <footer class="site"><div class="wrap">
   <div><b>遠州ライフハック</b></div>
-  <div class="muted" style="margin:6px 0 10px">運営：富士ヶ丘サービス ／ 代表：大石浩之</div>
-  <div class="muted" style="font-size:12px">本サイトは各市町公式サイトの転載ではありません。公式情報を整理・分類し、最終的に必ず各市町の公式ページへご案内します。</div>
+  <div class="muted" style="margin:6px 0 10px">運営：富士ヶ丘サービス株式会社/電話番号0538-31-3308</div>
+  <div class="muted" style="font-size:12px">本サイトは公式情報の転載サイトではありません。公式情報を整理・分類し、最終的に必ず公式ページへご案内します。</div>
+
+  <div class="muted" style="margin-top:14px;font-size:12px;line-height:1.7">
+    <div style="color:#fff;font-weight:700;margin-bottom:4px">運用中</div>
+    <div><a href="https://iwata.enshu-lifehack.com/" style="color:#fff;text-decoration:underline;"><span class="municipality-emoji" aria-hidden="true">🌱</span><span>磐田ライフハック</span><img src="/favicons/iwata.svg" alt="" aria-hidden="true" class="foot-favicon"></a></div>
+  </div>
+
+  <div class="muted" style="margin-top:14px;font-size:12px;line-height:1.7">
+    <div style="color:#fff;font-weight:700;margin-bottom:4px">近日運用予定</div>
+    <div><span class="municipality-emoji" aria-hidden="true">🍈</span><span>袋井ライフハック</span><img src="/favicons/fukuroi.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
+    <div><span class="municipality-emoji" aria-hidden="true">🍵</span><span>掛川ライフハック</span><img src="/favicons/kakegawa.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
+    <div><span class="municipality-emoji" aria-hidden="true">🌲</span><span>森町ライフハック</span><img src="/favicons/mori.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
+    <div><span class="municipality-emoji" aria-hidden="true">🌼</span><span>菊川市ライフハック</span><img src="/favicons/kikugawa.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
+    <div><span class="municipality-emoji" aria-hidden="true">🌊</span><span>御前崎市ライフハック</span><img src="/favicons/omaezaki.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
+    <div><span class="municipality-emoji" aria-hidden="true">🌅</span><span>湖西市ライフハック</span><img src="/favicons/kosai.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
+    <div><span class="municipality-emoji" aria-hidden="true">🎹</span><span>浜松市中央区ライフハック</span><img src="/favicons/hamamatsu-chuo.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
+    <div><span class="municipality-emoji" aria-hidden="true">🍊</span><span>浜松市浜名区ライフハック</span><img src="/favicons/hamamatsu-hamana.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
+    <div><span class="municipality-emoji" aria-hidden="true">🌲</span><span>浜松市天竜区ライフハック</span><img src="/favicons/hamamatsu-tenryu.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
+  </div>
 </div></footer>
 </body></html>
