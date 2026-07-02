@@ -37,6 +37,8 @@ h2.sec{font-size:18px;border-left:5px solid var(--green);padding-left:10px;margi
 .soon{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;color:var(--mut)}
 .soon .name{font-size:15.5px;font-weight:700;color:#445}
 .soon .state{display:inline-block;font-size:11px;font-weight:700;color:#8a6d1a;background:#fff3d6;border:1px solid #f0e2b8;border-radius:6px;padding:1px 7px;margin-top:8px}
+.soon-wide{grid-column:span 3;text-align:center}
+.soon-wide .name{display:flex;align-items:center;justify-content:center}
 .note{background:#f0f7f3;border:1px solid #cfe5da;border-radius:12px;padding:14px 16px;font-size:14px;color:#33503f;margin:26px 0 0}
 footer.site{background:#222;color:#cfd6d1;font-size:13px;margin-top:34px}
 footer.site .wrap{padding:22px 16px}
@@ -137,6 +139,9 @@ footer.site b{color:#fff}
   margin-right: 0.3rem;
 }
 @media (max-width: 760px) {
+  .soon-wide {
+    grid-column: auto;
+  }
   .support-grid {
     grid-template-columns: 1fr;
   }
@@ -171,22 +176,28 @@ footer.site b{color:#fff}
     </span>
     <span class="arw" aria-hidden="true">›</span>
   </a>
+  <a class="live-card" href="https://fukuroi.enshu-lifehack.com/">
+    <span class="ic municipality-emoji" aria-hidden="true">🍈</span>
+    <span class="body">
+      <span class="badge-live">公開中</span>
+      <div class="ttl">袋井ライフハック<img src="/favicons/fukuroi.svg" alt="" aria-hidden="true" class="soon-favicon"></div>
+      <div class="sub">袋井市の暮らしと手続きを、必要な場面から探せる生活ナビ</div>
+    </span>
+    <span class="arw" aria-hidden="true">›</span>
+  </a>
 
   <h2 class="sec">近日運用予定</h2>
   <div class="soon-grid">
-    <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🍈</span><span>袋井ライフハック</span><img src="/favicons/fukuroi.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
     <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🍵</span><span>掛川ライフハック</span><img src="/favicons/kakegawa.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
     <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🌲</span><span>森町ライフハック</span><img src="/favicons/mori.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
     <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🌼</span><span>菊川市ライフハック</span><img src="/favicons/kikugawa.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
     <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🌊</span><span>御前崎市ライフハック</span><img src="/favicons/omaezaki.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
     <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🌅</span><span>湖西市ライフハック</span><img src="/favicons/kosai.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
-    <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🎹</span><span>浜松市中央区ライフハック</span><img src="/favicons/hamamatsu-chuo.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
-    <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🍊</span><span>浜松市浜名区ライフハック</span><img src="/favicons/hamamatsu-hamana.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
-    <div class="soon"><div class="name"><span class="municipality-emoji" aria-hidden="true">🌲</span><span>浜松市天竜区ライフハック</span><img src="/favicons/hamamatsu-tenryu.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
+    <div class="soon soon-wide"><div class="name"><span class="municipality-emoji" aria-hidden="true">🎹</span><span>浜松市ライフハック</span><img src="/favicons/hamamatsu-chuo.svg" alt="" aria-hidden="true" class="soon-favicon"></div><span class="state">準備中</span></div>
   </div>
 
   <div class="note">
-    各市町版は順次公開していきます。まずは <a href="https://iwata.enshu-lifehack.com/">磐田ライフハック</a> をご利用ください。
+    各市町版は順次公開していきます。まずは <a href="https://iwata.enshu-lifehack.com/">磐田ライフハック</a>・<a href="https://fukuroi.enshu-lifehack.com/">袋井ライフハック</a> をご利用ください。
   </div>
 
   <section class="support-section company-support" aria-labelledby="support-title">
@@ -253,6 +264,7 @@ footer.site b{color:#fff}
   <div class="muted" style="margin-top:14px;font-size:12px;line-height:1.7">
     <div style="color:#fff;font-weight:700;margin-bottom:4px">運用中</div>
     <div><a href="https://iwata.enshu-lifehack.com/" style="color:#fff;text-decoration:underline;"><span class="municipality-emoji" aria-hidden="true">🌱</span><span>磐田ライフハック</span><img src="/favicons/iwata.svg" alt="" aria-hidden="true" class="foot-favicon"></a></div>
+    <div><a href="https://fukuroi.enshu-lifehack.com/" style="color:#fff;text-decoration:underline;"><span class="municipality-emoji" aria-hidden="true">🍈</span><span>袋井ライフハック</span><img src="/favicons/fukuroi.svg" alt="" aria-hidden="true" class="foot-favicon"></a></div>
   </div>
 
   <div class="muted" style="margin-top:14px;font-size:12px;line-height:1.7">
@@ -263,9 +275,7 @@ footer.site b{color:#fff}
     <div><span class="municipality-emoji" aria-hidden="true">🌼</span><span>菊川市ライフハック</span><img src="/favicons/kikugawa.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
     <div><span class="municipality-emoji" aria-hidden="true">🌊</span><span>御前崎市ライフハック</span><img src="/favicons/omaezaki.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
     <div><span class="municipality-emoji" aria-hidden="true">🌅</span><span>湖西市ライフハック</span><img src="/favicons/kosai.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
-    <div><span class="municipality-emoji" aria-hidden="true">🎹</span><span>浜松市中央区ライフハック</span><img src="/favicons/hamamatsu-chuo.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
-    <div><span class="municipality-emoji" aria-hidden="true">🍊</span><span>浜松市浜名区ライフハック</span><img src="/favicons/hamamatsu-hamana.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
-    <div><span class="municipality-emoji" aria-hidden="true">🌲</span><span>浜松市天竜区ライフハック</span><img src="/favicons/hamamatsu-tenryu.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
+    <div><span class="municipality-emoji" aria-hidden="true">🎹</span><span>浜松市ライフハック</span><img src="/favicons/hamamatsu-chuo.svg" alt="" aria-hidden="true" class="foot-favicon">　準備中</div>
   </div>
 </div></footer>
 </body></html>
