@@ -11,6 +11,10 @@ routes = [
   { pattern = "www.enshu-lifehack.com", custom_domain = true }
 ]
 
+# deploy のたびに全体フィード public/feed.xml を各市町のブログ記事フィードから再生成する。
+[build]
+command = "node scripts/build_feed.mjs"
+
 [assets]
 directory = "./public"
 not_found_handling = "404-page"

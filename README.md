@@ -15,3 +15,8 @@ wrangler deploy        # カスタムドメイン(enshu-lifehack.com / www)も�
 `public/index.html` の「近日運用予定」から該当市町を「公開中」カードへ移し、リンク先サブドメインを設定して再デプロイ。
 
 運営：富士ヶ丘サービス ／ 代表：大石浩之
+
+## 全体フィード `/feed.xml`（RSS 2.0）
+- `public/feed.xml` は **生成物**。手で編集しない。`node scripts/build_feed.mjs` が各市町のブログ記事フィード（各サイトの記事台帳から生成）を集め、新しい順に最大40件を書き出す。
+- `wrangler.toml` の `[build]` で deploy のたびに再生成。`.github/workflows/feed.yml` が毎日再生成し、変化があればコミットする。
+- ブログを始めた市町は `scripts/build_feed.mjs` の `SOURCES` に1行足す。

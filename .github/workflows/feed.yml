@@ -1,0 +1,27 @@
+# 全体フィード public/feed.xml を毎日再生成し、変化があればコミットする（push で本番へ反映）。
+name: Build feed.xml
+on:
+  schedule:
+    - cron: "40 21 * * *" # 毎日 06:40 JST（各市町の朝の記事公開後）
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/build_feed.mjs
+      - name: 本番 feed.xml の取得確認（集約側と同じ User-Agent）
+        run: curl -s -o /dev/null -w "%{http_code} %{content_type}\n" -A "oishi-hiroyuki-blog-hub/1.0" https://enshu-lifehack.com/feed.xml || true
+      - name: 変化があればコミット
+        run: |
+          if git diff --quiet -- public/feed.xml; then echo "変更なし"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/feed.xml
+          git commit -m "feed.xml を自動更新"
+          git push
