@@ -16,7 +16,12 @@ jobs:
           node-version: 20
       - run: node scripts/build_feed.mjs
       - name: 本番 feed.xml の取得確認（集約側と同じ User-Agent）
-        run: curl -s -o /dev/null -w "%{http_code} %{content_type}\n" -A "oishi-hiroyuki-blog-hub/1.0" https://enshu-lifehack.com/feed.xml || true
+        run: |
+          for u in https://enshu-lifehack.com/feed.xml https://enshu-lifehack.com/ https://iwata.enshu-lifehack.com/blog/feed.xml; do
+            for ua in "oishi-hiroyuki-blog-hub/1.0" "Mozilla/5.0"; do
+              echo "$u [$ua] $(curl -s -o /dev/null -w '%{http_code} %{content_type}' -A "$ua" "$u")"
+            done
+          done
       - name: 変化があればコミット
         run: |
           if git diff --quiet -- public/feed.xml; then echo "変更なし"; exit 0; fi
