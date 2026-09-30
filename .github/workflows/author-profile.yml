@@ -1,0 +1,39 @@
+name: Author profile checks
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'public/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'wrangler.toml'
+      - 'scripts/build_feed.mjs'
+      - 'tests/author-profile.test.mjs'
+      - '.github/workflows/author-profile.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: author-profile-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  author-profile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CI: 'true'
+      WRANGLER_SEND_METRICS: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Check Person, Profile and company publisher
+        run: node --test tests/author-profile.test.mjs
+      - name: Build static site without uploading
+        run: npx --no-install wrangler deploy --dry-run --outdir ./build-check
