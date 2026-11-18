@@ -10,293 +10,68 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <style>
-:root{--green:#1f6f54;--green-d:#15503c;--bg:#f6f7f5;--card:#fff;--ink:#222;--mut:#667;--line:#e3e6e1}
-*{box-sizing:border-box}
-html{font-size:17px}
-body{margin:0;font-family:-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic UI",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7}
-a{color:var(--green-d);text-decoration:none}a:hover{text-decoration:underline}
-.wrap{max-width:760px;margin:0 auto;padding:0 16px}
-header.site{background:var(--green);color:#fff}
-header.site .wrap{display:flex;align-items:center;gap:12px;padding:16px 16px}
-header.site .logo{font-weight:800;font-size:21px;color:#fff}
-header.site .tag{font-size:12px;opacity:.85}
-.disclaimer{background:#fff8e6;border-bottom:1px solid #f0e2b8;color:#705a13;font-size:12.5px}
-.disclaimer .wrap{padding:8px 16px}
-main{padding:24px 0 40px}
-.hero h1{font-size:25px;margin:6px 0 8px;color:var(--green-d)}
-.hero p{font-size:15.5px;color:var(--mut);margin:0 0 6px}
-h2.sec{font-size:18px;border-left:5px solid var(--green);padding-left:10px;margin:30px 0 14px}
-.live-grid{display:grid;grid-template-columns:1fr;gap:14px}.live-card{display:flex;align-items:center;gap:14px;background:#fff;border:1.5px solid var(--green);border-radius:16px;padding:18px 18px;min-height:112px}
-.live-card:hover{background:#f3faf6;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,.06)}
-.live-card .ic{font-size:30px;line-height:1}
-.live-card .body{flex:1}
-.live-card .ttl{font-size:19px;font-weight:800;color:var(--green-d)}
-.live-card .sub{font-size:13px;color:var(--mut);margin-top:3px}
-.live-card .arw{margin-left:auto;color:var(--green);font-weight:800;font-size:22px}
-.badge-live{display:inline-block;font-size:11px;font-weight:800;color:#fff;background:var(--green);border-radius:6px;padding:2px 8px;margin-bottom:6px}
-.note{background:#f0f7f3;border:1px solid #cfe5da;border-radius:12px;padding:14px 16px;font-size:14px;color:#33503f;margin:26px 0 0}
-footer.site{background:#222;color:#cfd6d1;font-size:13px;margin-top:34px}
-footer.site .wrap{padding:22px 16px}
-footer.site b{color:#fff}
-.muted{color:var(--mut)}
-@media (min-width:760px){html{font-size:16px}.live-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}
-.company-support {
-  margin: 56px auto 32px;
-  padding: 32px 24px;
-  border-radius: 20px;
-  background: #f8faf7;
-  border: 1px solid rgba(46, 80, 60, 0.14);
-}
-.company-support h2 {
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
-  line-height: 1.5;
-}
-.support-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  margin-top: 24px;
-}
-.support-card {
-  padding: 24px;
-  border-radius: 16px;
-  background: #ffffff;
-  border: 1px solid rgba(46, 80, 60, 0.12);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-}
-.support-card h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-size: 1.15rem;
-}
-.support-contact {
-  margin-top: 16px;
-  line-height: 1.8;
-}
-.support-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 16px;
-}
-.support-links a {
-  text-decoration: none;
-}
-.support-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 12px;
-  padding: 12px 18px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-  border: 1px solid rgba(46, 80, 60, 0.22);
-  color: var(--green-d);
-  background: transparent;
-  transition: all 0.2s ease;
-}
-.support-button:hover {
-  background: var(--green);
-  color: #fff;
-  border-color: var(--green);
-  text-decoration: none;
-}
-.soon-favicon {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
-  margin-left: 6px;
-  border-radius: 3px;
-}
-.foot-favicon {
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  vertical-align: middle;
-  margin-left: 4px;
-  border-radius: 2px;
-}
-.municipality-emoji,
-.support-emoji {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-}
-.municipality-emoji {
-  margin-right: 0.35rem;
-}
-.support-emoji {
-  margin-right: 0.3rem;
-}
-@media (max-width: 760px) {
-  .support-grid {
-    grid-template-columns: 1fr;
-  }
-  .company-support {
-    padding: 24px 18px;
-  }
-}
+:root{--green:#174c41;--green-d:#103e35;--bg:#f5f3ec;--card:#fff;--ink:#203c35;--mut:#56665f;--line:#d9dfd6;--gold:#c6a86c}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8}a{color:var(--green);text-underline-offset:4px}a:hover{text-decoration:underline}a:focus-visible,summary:focus-visible{outline:3px solid #bd7b26;outline-offset:5px}svg{display:block;width:100%;height:100%}img{max-width:100%;display:block}.wrap{max-width:1240px;margin:auto;padding:0 32px}.site-header{background:#103e35;color:#fff}.header-inner{min-height:90px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:14px;color:#fff;text-decoration:none}.brand-mark{width:38px;height:38px;border:1px solid #8aa69a;border-radius:50%;display:grid;place-items:center;font-size:21px;font-family:serif}.brand strong{display:block;font-size:22px;letter-spacing:.07em}.brand small{display:block;font-size:10px;letter-spacing:.22em;color:#c5d6cc}.header-nav{display:flex;gap:28px;font-size:13px}.header-nav a{color:#fff;text-decoration:none;padding:12px 0}.header-nav a:hover{color:#e5c383}.disclaimer{border-bottom:1px solid #e1dfd2;color:#626355;font-size:11px;background:#f0efe6}.disclaimer .wrap{padding-top:9px;padding-bottom:9px}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:55px;padding:66px 0 62px;align-items:center}.eyebrow{display:flex;align-items:center;gap:12px;letter-spacing:.19em;font-size:11px;font-weight:700;color:#7a6744;margin:0 0 18px}.eyebrow:before{content:"";width:28px;height:1px;background:currentColor}.hero h1{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(32px,3.7vw,49px);font-weight:600;line-height:1.55;letter-spacing:.03em;margin:0 0 22px}.hero h1 span{color:#5d806e}.hero-description{font-size:14px;color:var(--mut);max-width:520px;line-height:2}.hero-cta{display:inline-flex;align-items:center;gap:45px;padding:13px 23px;background:var(--green);color:white;text-decoration:none;border-radius:4px;margin-top:16px;font-size:14px;font-weight:700}.hero-cta:hover{background:#23654f;text-decoration:none}.hero-visual{position:relative;margin:0 0 16px 0;padding:0 0 24px 24px}.hero-visual:before{content:"";position:absolute;inset:24px 24px 0 0;background:#e3e6d9;border-radius:2px}.hero-visual img{position:relative;width:100%;height:338px;object-fit:cover;border-radius:2px;box-shadow:0 15px 38px #153f2920}.hero-visual figcaption{position:absolute;bottom:43px;left:44px;color:#fff;text-shadow:0 1px 6px #000;font-size:12px}.hero-stamp{position:absolute;top:-17px;right:-14px;width:90px;height:90px;border-radius:50%;background:#f5f3ec;color:#3f6555;border:1px solid #cccfc0;display:grid;place-content:center;text-align:center;font-size:10px;line-height:1.5;letter-spacing:.12em;box-shadow:0 5px 16px #00000008}.hero-stamp b{font-family:Georgia,serif;font-size:28px;letter-spacing:.06em}.intro-detail{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;margin:0 0 54px;font-size:13px;color:var(--mut)}summary{cursor:pointer}.intro-detail p{max-width:900px;margin:15px 0 0}.section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:25px}.section-heading h2{margin:0;font-size:27px;letter-spacing:.03em}.section-heading .eyebrow{margin-bottom:7px}.section-heading>p{font-size:12px;color:var(--mut);margin:0 0 5px}.live-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 22px}.town-card{background:#fff;border:1px solid #e0e4db;border-radius:7px;overflow:hidden;box-shadow:0 7px 18px #19392709;transition:transform .2s,box-shadow .2s}.town-card:hover{transform:translateY(-4px);box-shadow:0 15px 28px #19392718}.town-photo{height:180px;position:relative;background:#d9e3dd}.town-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 52%,#081d2360)}.town-photo>img{width:100%;height:100%;object-fit:cover}.town-icon{position:absolute;right:17px;bottom:-24px;width:62px;height:62px;background:var(--town);border:4px solid white;box-shadow:0 4px 12px #143b2520;border-radius:13px;z-index:1;padding:9px;color:#fff}.place-label{position:absolute;left:13px;bottom:12px;right:78px;color:white;font-size:10px;z-index:1;line-height:1.5;text-shadow:0 1px 4px #000}.town-body{padding:22px 19px 18px;display:flex;flex-direction:column;min-height:275px}.town-heading{display:flex;align-items:center;justify-content:space-between}.town-en{font-size:9px;letter-spacing:.19em;font-weight:700;color:var(--town)}.town-heading h3{font-size:24px;margin:1px 0 0;line-height:1.55}.municipality-emoji{display:inline-flex;font-size:.6em;margin-right:7px;vertical-align:middle}.town-number{font-family:Georgia,serif;font-size:26px;color:#7e8b82;padding-top:16px}.town-tagline{font-size:12px;font-weight:700;margin:13px 0 6px}.town-description{font-size:12px;color:var(--mut);line-height:1.8;margin:0 0 15px}.town-actions{margin-top:auto}.town-main{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#f0f5f0;color:var(--green-d);text-decoration:none;padding:10px 11px;font-size:12px;font-weight:700;border-radius:3px;min-height:44px}.town-main:hover{background:#e0ecdf;text-decoration:none}.town-main span{font-size:19px;font-weight:400}.album-link{display:flex;justify-content:space-between;padding:12px 2px 0;font-size:11px;min-height:40px;text-decoration:none}.album-section{position:relative;display:grid;grid-template-columns:1fr 1.1fr;gap:42px;background:#153e35;color:#fff;padding:38px 40px;margin:48px 0;border-radius:6px;overflow:hidden}.album-section .eyebrow{color:#d1ba8c}.album-title{display:flex;align-items:center;gap:18px}.album-title>span{width:51px;height:51px;color:#d1ba8c;flex-shrink:0}.album-section h2{font-family:"Yu Mincho",serif;font-size:25px;line-height:1.6;margin:0}.album-section p{font-size:12px;color:#d1ded5;margin:17px 0 0}.album-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;align-content:center}.album-grid a{display:flex;justify-content:space-between;align-items:center;color:#fff;font-size:12px;text-decoration:none;min-height:46px;border-bottom:1px solid #617d6d}.album-grid a:hover{color:#edce8f}.note{font-size:13px;padding:23px 26px;border:1px solid var(--line);background:#eeeee5;border-radius:5px;color:#485d50;margin:28px 0}.company-support{margin:55px 0 35px;padding:0}.company-support h2{font-size:24px;line-height:1.6;margin:0 0 20px}.company-support>p{font-size:14px;max-width:880px;color:var(--mut)}.support-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}.support-card{padding:26px 30px;background:white;border:1px solid var(--line);border-top:3px solid #7d9380;border-radius:5px}.support-card h3{font-size:17px;margin-top:0}.support-card p{font-size:13px;color:var(--mut)}.support-contact{line-height:1.9}.support-links{display:flex;gap:18px;flex-wrap:wrap}.support-button{display:inline-flex;padding:11px 17px;border:1px solid #9cad9f;border-radius:3px;font-size:13px;text-decoration:none;font-weight:700}.support-button:hover{background:var(--green);color:#fff;text-decoration:none}.support-emoji{margin-right:6px}.note h2.sec{font-size:17px;margin-top:0}.credits{font-size:11px;color:var(--mut);margin:30px 0 50px;padding-top:18px;border-top:1px solid var(--line)}.credits ul{padding-left:20px}.credits li{margin:5px 0;overflow-wrap:anywhere}footer.site{background:#112f29;color:#c8d7cb;padding:32px 0;font-size:12px}footer.site .muted{color:#c8d7cb}footer.site b{font-size:19px;letter-spacing:.04em}.foot-favicon{display:inline-block;width:13px;height:13px;vertical-align:middle;margin-left:5px}.muted{color:var(--mut)}.skip-link{position:absolute;left:16px;top:-70px;background:#fff;padding:12px;z-index:10}.skip-link:focus{top:10px}
+@media(min-width:980px){footer.site .wrap>div:last-child{display:flex;flex-wrap:wrap;gap:10px 20px}footer.site .wrap>div:last-child>div:first-child{width:100%}}
+@media(max-width:1050px){.live-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.town-photo{height:230px}.town-body{min-height:260px}.hero{gap:32px}.hero h1{font-size:37px}.hero-visual img{height:320px}.header-nav{gap:18px}.album-section{gap:26px;padding:30px}.album-section h2{font-size:23px}}
+@media(max-width:700px){.wrap{padding-left:20px;padding-right:20px}.header-inner{min-height:100px;align-items:flex-start;justify-content:center;flex-direction:column;gap:0;padding-top:13px;padding-bottom:10px}.brand strong{font-size:19px}.brand small{font-size:9px}.brand-mark{width:33px;height:33px}.header-nav{width:100%;justify-content:space-between;font-size:11px;gap:14px}.header-nav a{padding:10px 0 0}.disclaimer{font-size:10px}.hero{grid-template-columns:1fr;padding:32px 0 22px;gap:30px}.hero h1{font-size:34px;line-height:1.55;margin-bottom:17px}.hero-description{font-size:13px}.hero-cta{margin-top:12px;padding:12px 19px}.hero-visual{margin:0;padding:0 0 15px 15px}.hero-visual:before{inset:15px 15px 0 0}.hero-visual img{height:225px}.hero-visual figcaption{bottom:30px;left:30px}.hero-stamp{width:68px;height:68px;right:-7px;top:-12px;font-size:8px}.hero-stamp b{font-size:23px}.intro-detail{margin-bottom:32px;font-size:12px}.section-heading{display:block;margin-bottom:20px}.section-heading h2{font-size:25px}.section-heading>p{margin-top:10px}.live-grid{gap:22px;grid-template-columns:1fr}.town-photo{height:210px}.town-body{min-height:0;padding:23px}.town-heading h3{font-size:26px}.town-tagline{font-size:13px}.town-description{font-size:13px}.town-main{font-size:13px}.album-link{font-size:12px}.album-section{display:block;padding:28px 24px;margin:35px 0}.album-section h2{font-size:24px}.album-title>span{width:43px;height:43px}.album-grid{grid-template-columns:1fr;margin-top:20px;gap:4px}.album-grid a{font-size:13px}.company-support h2{font-size:21px}.support-grid{grid-template-columns:1fr}.support-card{padding:24px}.note{padding:20px}.credits{font-size:11px}.eyebrow{font-size:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.town-card{transition:none}.town-card:hover{transform:none}}
+
+.hero-consult{display:block;margin-top:14px;font-size:12px;font-weight:700}.header-nav{gap:22px}.header-nav .nav-consult{color:#efce91}.activity-intro{display:grid;grid-template-columns:1fr 320px;gap:50px;align-items:center;background:#e9ede3;border:1px solid #d9dfd2;border-radius:6px;padding:36px 44px;margin:0 0 20px}.activity-copy h2{font-family:"Yu Mincho",serif;font-size:28px;line-height:1.6;margin:0 0 16px}.activity-copy>p:not(.eyebrow){font-size:13px;color:var(--mut)}.activity-count{display:flex;align-items:center;gap:23px;margin:16px 0}.activity-count>strong{font-family:Georgia,serif;font-size:68px;font-weight:400;line-height:1}.activity-count strong span{font-family:inherit;font-size:19px;margin-left:8px}.activity-count p{font-size:12px;line-height:1.8}.activity-count small{font-size:10px;color:var(--mut)}.activity-links{display:flex;flex-wrap:wrap;gap:14px 24px;font-size:12px;font-weight:700}.activity-person{margin:0;display:grid;grid-template-columns:105px 1fr;gap:17px;align-items:center}.activity-person img{width:105px;height:150px;object-fit:cover;border-radius:4px}.activity-person figcaption{display:flex;flex-direction:column}.activity-person small{font-size:10px;color:var(--mut)}.activity-person strong{font-size:22px;margin:7px 0}.activity-person span{font-size:10px;line-height:1.8}.purpose-links{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 55px}.purpose-links a{padding:17px 14px;border-bottom:2px solid #94a88f;text-decoration:none;background:#ffffff7a}.purpose-links b{display:block;font-size:14px}.purpose-links span{display:block;margin-top:4px;font-size:10px;color:var(--mut)}.purpose-links a:hover{background:#e5ecdf}.support-lead{margin-bottom:27px}.company-support{border-top:1px solid var(--line);padding-top:50px;margin-top:55px}.company-support .support-lead h2{font-family:"Yu Mincho",serif;font-size:31px;line-height:1.7;margin-bottom:15px}.support-lead h2 span{color:#47735c}.support-lead>p:last-child{font-size:14px;color:var(--mut)}.service-card{overflow:hidden;background:white;border:1px solid #d5ddd3;border-radius:7px;box-shadow:0 9px 25px #143b250b}.service-card figure{margin:0;position:relative}.service-card figure img{width:100%;height:215px;object-fit:cover}.service-card figcaption{position:absolute;bottom:0;left:0;right:0;padding:20px 20px 10px;color:white;background:linear-gradient(transparent,#15372d9e);font-size:11px}.service-body{padding:27px 30px}.service-kicker{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:700;margin:0 0 16px}.free-badge,.care-badge{margin-left:auto;padding:3px 8px;background:#edf3e7;color:#365b37;border-radius:3px;font-size:10px}.care-badge{background:#f5eee1;color:#7b5731}.service-body h3{font-family:"Yu Mincho",serif;font-size:27px;line-height:1.6;margin:0 0 15px}.service-body>p{font-size:13px;line-height:1.9;color:var(--mut)}.service-body>p strong{color:var(--ink)}.karte-benefits{background:#f2f5ed;padding:18px 20px;margin:20px 0}.care-service .karte-benefits{background:#f7f2e9}.karte-benefits>strong{font-size:12px}.karte-benefits ul{padding:0;list-style:none;margin:10px 0}.karte-benefits li{font-size:14px;margin:6px 0;padding-left:18px;position:relative}.karte-benefits li:before{content:'✓';position:absolute;left:0;color:#58784b}.karte-benefits p{font-size:11px;color:var(--mut);margin:12px 0 0}.service-body .reassurance{font-size:12px;font-weight:700;color:var(--green)}.service-cta{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 20px;border-radius:4px;background:#185441;color:#fff;text-decoration:none;font-size:15px;font-weight:700;box-shadow:0 5px 12px #19533922;min-height:55px}.service-cta:hover{background:#0d3c2c;text-decoration:none}.care-service .service-cta{background:#785839}.care-service .service-cta:hover{background:#604024}.service-secondary{display:flex;justify-content:space-between;padding:14px 0;font-size:13px;text-decoration:underline}.service-contact{border-top:1px solid var(--line);margin-top:8px;padding-top:17px}.service-contact span,.service-contact small{display:block;color:var(--mut);font-size:11px}.service-contact>a{display:inline-block;font-size:28px;font-weight:700;letter-spacing:.04em;text-decoration:none;min-height:44px}.service-contact a:hover{text-decoration:underline}.service-extra{display:flex;flex-direction:column;gap:8px;margin:18px 0 0;font-size:12px}.service-note{font-size:10px!important;margin-bottom:0}.care-contacts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}.care-contacts a{display:block;padding:10px;background:#f4f4ed;text-decoration:none}.care-contacts span{display:block;font-size:10px;color:var(--mut)}.care-contacts b{display:block;font-size:14px}.housing-callout{display:flex;align-items:center;justify-content:space-between;gap:20px;background:#e7ede1;border-radius:4px;padding:22px 28px;margin-top:22px}.housing-callout b{font-size:14px}.housing-callout p{font-size:12px;color:var(--mut);margin:5px 0 0}.housing-callout>a{flex-shrink:0;font-size:13px;font-weight:700}.all-sites{margin:65px 0 45px;border-top:1px solid var(--line);padding-top:45px}.all-sites .section-heading h2{font-family:"Yu Mincho",serif;font-size:30px}.directory-intro{font-size:14px;color:var(--mut)}.directory-nav{display:flex;gap:9px;flex-wrap:wrap;margin:24px 0}.directory-nav a{font-size:12px;padding:7px 13px;border:1px solid #c9d4c6;border-radius:3px;text-decoration:none;background:white}.directory-nav a:hover{background:#e4ecde}.directory-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;align-items:start}.directory-group{background:#fff;border:1px solid var(--line);border-radius:6px;padding:25px 26px}.directory-group-head{display:flex;align-items:center;justify-content:space-between}.directory-group h3{font-size:21px;margin:0}.directory-group-head>span{font-size:10px;letter-spacing:.12em;color:#7d755f}.directory-group>p{font-size:12px;color:var(--mut);margin:8px 0 17px}.directory-group ul{list-style:none;padding:0;margin:0}.directory-group li+li{border-top:1px solid #e8ebe5}.project-link{display:grid;grid-template-columns:26px minmax(0,1fr) 13px;gap:9px;align-items:center;padding:13px 0;text-decoration:none}.project-link:hover{background:#f4f7f0;text-decoration:none}.project-no{font-family:Georgia,serif;font-size:15px;color:#7e8b80}.project-link strong{display:block;font-size:14px}.project-link small{display:block;font-size:11px;color:var(--mut);margin-top:3px}.project-arrow{font-size:12px;color:#6a816d}.maker-note{display:flex;justify-content:space-between;align-items:center;gap:35px;padding:32px;background:#e8eddf;border-left:4px solid #668064;margin-top:27px}.maker-note h3{font-family:"Yu Mincho",serif;font-size:25px;line-height:1.6;margin:0 0 13px}.maker-note p:not(.eyebrow){font-size:12px;color:var(--mut)}.maker-note>a{padding:13px 20px;border:1px solid #a0b097;white-space:nowrap;font-size:12px;text-decoration:none;font-weight:700}
+@media(max-width:1050px){.activity-intro{grid-template-columns:1fr;gap:25px}.activity-person{grid-template-columns:80px 1fr}.activity-person img{width:80px;height:100px}.activity-person figcaption{display:block}.activity-person strong{display:block;margin:3px 0}.activity-person span{display:block}.header-nav{gap:14px;font-size:11px}.service-body{padding:25px}.service-body h3{font-size:23px}.care-contacts{grid-template-columns:1fr}.service-kicker{flex-wrap:wrap}.free-badge,.care-badge{margin-left:0}.service-cta{font-size:14px;padding:15px}.purpose-links{grid-template-columns:1fr 1fr}.directory-group{padding:23px}.maker-note{display:block}.maker-note>a{display:inline-block;margin-top:12px}}
+@media(max-width:700px){.header-nav{flex-wrap:wrap;gap:0 16px;justify-content:flex-start}.header-nav a{font-size:10px}.activity-intro{padding:26px 22px}.activity-copy h2{font-size:23px}.activity-copy>p:not(.eyebrow){font-size:12px}.activity-count>strong{font-size:59px}.activity-count{gap:14px}.activity-count p{font-size:11px}.activity-count small{font-size:9px}.activity-links{font-size:11px}.purpose-links{gap:10px;margin-bottom:35px}.purpose-links a{padding:13px 10px}.purpose-links b{font-size:12px}.purpose-links span{font-size:9px}.company-support{padding-top:35px}.company-support .support-lead h2{font-size:24px}.support-lead .eyebrow{font-size:8px;letter-spacing:.06em}.support-lead>p:last-child{font-size:13px}.service-card figure img{height:185px}.service-body{padding:24px 20px}.service-body h3{font-size:23px}.service-kicker{font-size:11px}.service-body>p{font-size:13px}.karte-benefits{padding:16px}.karte-benefits li{font-size:12px}.service-secondary{font-size:12px}.service-contact>a{font-size:25px}.housing-callout{display:block;padding:22px}.housing-callout>a{display:inline-block;margin-top:14px}.all-sites{margin-top:40px;padding-top:30px}.all-sites .section-heading h2{font-size:25px}.directory-intro{font-size:13px}.directory-grid{grid-template-columns:1fr;gap:20px}.directory-group{padding:23px 18px}.project-link{grid-template-columns:22px minmax(0,1fr) 12px;gap:7px}.project-link strong{font-size:13px}.project-link small{font-size:10px}.directory-group h3{font-size:20px}.maker-note{padding:25px 20px}.maker-note h3{font-size:23px}.maker-note p:not(.eyebrow){font-size:12px}.maker-note>a{font-size:11px}}
+@media(max-width:360px){.service-body h3{font-size:19px}.company-support .support-lead h2{font-size:21px}}
 </style>
 </head><body>
-<header class="site"><div class="wrap">
-  <span class="logo">遠州ライフハック</span>
-  <span class="tag">遠州エリアの暮らしナビ</span>
-</div></header>
+<a class="skip-link" href="#main">本文へ</a>
+<header class="site-header"><div class="wrap header-inner"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">遠</span><span><strong>遠州ライフハック</strong><small>ENSHU LIFEHACK / SHIZUOKA</small></span></a><nav class="header-nav" aria-label="主なメニュー"><a href="#activity">大石浩之の活動</a><a href="#towns">市町から探す</a><a href="#albums">懐かし写真館</a><a class="nav-consult" href="#support-title">実家・介護の相談</a></nav></div></header>
 <div class="disclaimer"><div class="wrap"><span aria-hidden="true">⚠</span> 本サイトは各市町の公式サイトではありません。最新・正確な情報は、必ず各市町の公式サイトでご確認ください。</div></div>
+<main id="main"><div class="wrap"><section class="hero"><div><p class="eyebrow">ENSHU, OUR LOCAL LIFE</p><h1>遠州の暮らしに、<br><span>迷わない入口を。</span></h1><p class="hero-description">引っ越し、子育て、防災、介護、住まい。<br>必要な手続きも、まちの懐かしい記憶も。<br>静岡県西部・遠州の8市町を、ここから。</p><a class="hero-cta" href="#towns">お住まいの市町を選ぶ <span aria-hidden="true">↓</span></a><a class="hero-consult" href="#support-title">実家・空き家・介護の相談はこちら →</a></div><figure class="hero-visual"><img src="/images/cities/omaezaki.webp" alt="夕日を受ける御前埼灯台と遠州灘の海岸" width="960" height="640" fetchpriority="high"><figcaption>海と、山と、まちのある暮らし。<br>御前崎市・御前埼灯台</figcaption><span class="hero-stamp" aria-hidden="true">SHIZUOKA<b>遠州</b>LOCAL GUIDE</span></figure></section>
+<details class="intro-detail"><summary>遠州ライフハックについて ― 公式情報への道案内</summary><p>遠州ライフハックは、遠州エリア（静岡県西部）で暮らす方が、必要な手続きや相談先にすばやくたどり着けるよう、各市町の公式情報を暮らしの場面ごとに整理する生活ナビです。</p><p>引っ越し、子育て、防災、税金、介護、住まい、相続、空き家のこと。「どのページを見ればいいのか」「何から確認すればいいのか」が分かりにくい情報を、目的別にたどれる形に整え、最終的には必ず各市町の公式ページへご案内します。</p><p class="muted">本サイトは公式情報の転載サイトではありません。暮らしの中で必要になる情報を探しやすく整理し、正確な確認先として各市町の公式ページへつなぐことを目的としています。</p></details>
+<section class="activity-intro" id="activity" aria-labelledby="activity-title"><div class="activity-copy"><p class="eyebrow">HIROYUKI OISHI / WORK &amp; COMMUNITY</p><h2 id="activity-title">仕事も、地域の記憶も、学びも。<br>ウェブで、役に立つ形に。</h2><p>介護・不動産の現場から、暮らしの案内、懐かしい写真、学校、文化へ。<br>大石浩之は、身近な困りごとや地域の魅力を、自分の手でサイトにしています。</p><div class="activity-count"><strong>40<span>sites</span></strong><p>2026年6月20日から制作<br><small>2026年11月19日時点・本サイトを含む</small></p></div><div class="activity-links"><a href="#all-sites">40サイトの全体像を見る <span aria-hidden="true">↓</span></a><a href="https://oishi-hiroyuki.org/">大石ひろゆき公式サイト ↗</a></div></div><figure class="activity-person"><img src="/images/support/owner.webp" alt="富士ヶ丘サービス代表・宅地建物取引士の大石浩之" width="480" height="560" loading="lazy"><figcaption><small>企画・制作・運営</small><strong>大石 浩之</strong><span>富士ヶ丘サービス株式会社 代表<br>宅地建物取引士</span></figcaption></figure></section>
+<nav class="purpose-links" aria-label="目的から探す"><a href="#support-title"><b>暮らしを支える</b><span>実家・空き家・介護の相談 →</span></a><a href="#towns"><b>必要な情報を届ける</b><span>遠州8市町の暮らしナビ →</span></a><a href="#albums"><b>地域の記憶を残す</b><span>5市町の懐かし写真館 →</span></a><a href="#group-learning"><b>学びと文化をひらく</b><span>数学・文学・音楽・家紋 →</span></a></nav><section id="towns" aria-labelledby="towns-title"><div class="section-heading"><div><p class="eyebrow">FIND YOUR TOWN</p><h2 id="towns-title">あなたのまちから、探す。</h2></div><p>遠州8市町の暮らしナビ</p></div><div class="live-grid"><article class="town-card" style="--town:#236681">
+ <div class="town-photo"><img src="/images/cities/iwata.webp" alt="磐田市・旧見付学校" width="960" height="640" loading="lazy" decoding="async"><span class="place-label">旧見付学校</span><span class="town-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 54h48M13 53V27h38v26M10 27l22-11 22 11M24 20V9h16v11M22 9l10-6 10 6M27 53V40h10v13M20 33h4m16 0h4M30 13h4"/></svg></span></div>
+ <div class="town-body"><div class="town-heading"><div><span class="town-en">IWATA</span><h3><span class="municipality-emoji" aria-hidden="true">🌱</span>磐田市</h3></div><span class="town-number" aria-hidden="true">01</span></div>
+ <p class="town-tagline">歴史と、ものづくりのまち。</p><p class="town-description">磐田市の暮らしと手続きを、<br>必要な場面から探す。</p>
+ <div class="town-actions"><a class="town-main" href="https://iwata.enshu-lifehack.com/" aria-label="磐田ライフハックで暮らし・手続きを探す">暮らし・手続きを探す <span aria-hidden="true">→</span></a><a class="album-link" href="https://iwataalb.atawi.link/">磐田懐かし写真館 <span aria-hidden="true">↗</span></a></div></div></article><article class="town-card" style="--town:#54794b">
+ <div class="town-photo"><img src="/images/cities/fukuroi.webp" alt="袋井市・法多山 尊永寺" width="960" height="640" loading="lazy" decoding="async"><span class="place-label">法多山 尊永寺</span><span class="town-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="36" r="20"/><path d="M32 16c-1-9 5-12 12-10M23 18c-9 13-9 23 0 36m18-36c9 13 9 23 0 36M14 28c11 7 25 7 36 0M14 43c11-7 25-7 36 0M32 16v40"/></svg></span></div>
+ <div class="town-body"><div class="town-heading"><div><span class="town-en">FUKUROI</span><h3><span class="municipality-emoji" aria-hidden="true">🍈</span>袋井市</h3></div><span class="town-number" aria-hidden="true">02</span></div>
+ <p class="town-tagline">緑と、実りに出会うまち。</p><p class="town-description">袋井市の暮らしと手続きを、<br>必要な場面から探す。</p>
+ <div class="town-actions"><a class="town-main" href="https://fukuroi.enshu-lifehack.com/" aria-label="袋井ライフハックで暮らし・手続きを探す">暮らし・手続きを探す <span aria-hidden="true">→</span></a><a class="album-link" href="https://fukuroialb.atawi.link/">袋井懐かし写真館 <span aria-hidden="true">↗</span></a></div></div></article><article class="town-card" style="--town:#8b6841">
+ <div class="town-photo"><img src="/images/cities/kakegawa.webp" alt="掛川市・掛川城" width="960" height="640" loading="lazy" decoding="async"><span class="place-label">掛川城</span><span class="town-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 55h48M14 55V40h36v15M10 40l22-9 22 9M20 34V22h24v12M15 22l17-9 17 9M28 15V8h8v7M26 55V45h12v10M27 28h10M30 8V4"/></svg></span></div>
+ <div class="town-body"><div class="town-heading"><div><span class="town-en">KAKEGAWA</span><h3><span class="municipality-emoji" aria-hidden="true">🍵</span>掛川市</h3></div><span class="town-number" aria-hidden="true">03</span></div>
+ <p class="town-tagline">城下町に、茶の香り。</p><p class="town-description">掛川市の暮らしと手続きを、<br>必要な場面から探す。</p>
+ <div class="town-actions"><a class="town-main" href="https://kakegawa.enshu-lifehack.com/" aria-label="掛川ライフハックで暮らし・手続きを探す">暮らし・手続きを探す <span aria-hidden="true">→</span></a><a class="album-link" href="https://kakegawaalb.atawi.link/">掛川懐かし写真館 <span aria-hidden="true">↗</span></a></div></div></article><article class="town-card" style="--town:#3c7665">
+ <div class="town-photo"><img src="/images/cities/morimachi.webp" alt="森町・小國神社の杉並木" width="960" height="640" loading="lazy" decoding="async"><span class="place-label">小國神社の杉並木</span><span class="town-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M25 53V36M44 56V42M25 6 10 27h8L7 42h36L32 27h8L25 6ZM44 18l10 15h-5l9 12H43M7 57h50"/></svg></span></div>
+ <div class="town-body"><div class="town-heading"><div><span class="town-en">MORIMACHI</span><h3><span class="municipality-emoji" aria-hidden="true">🌲</span>森町</h3></div><span class="town-number" aria-hidden="true">04</span></div>
+ <p class="town-tagline">森と、古い街道のある暮らし。</p><p class="town-description">森町の暮らしと手続きを、<br>必要な場面から探す。</p>
+ <div class="town-actions"><a class="town-main" href="https://morimachi.enshu-lifehack.com/" aria-label="森町ライフハックで暮らし・手続きを探す">暮らし・手続きを探す <span aria-hidden="true">→</span></a><a class="album-link" href="https://morimachialb.atawi.link/">森町懐かし写真館 <span aria-hidden="true">↗</span></a></div></div></article><article class="town-card" style="--town:#657e34">
+ <div class="town-photo"><img src="/images/cities/kikugawa.webp" alt="菊川市・茶畑と東海道新幹線" width="960" height="640" loading="lazy" decoding="async"><span class="place-label">茶畑と東海道新幹線</span><span class="town-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M30 34C11 35 10 18 10 12c17 0 27 8 20 22ZM33 34C30 16 45 10 55 10c0 14-6 27-22 24ZM20 23l12 14 13-15M32 36v10M7 50c16-8 34-8 50 0M7 58c16-8 34-8 50 0"/></svg></span></div>
+ <div class="town-body"><div class="town-heading"><div><span class="town-en">KIKUGAWA</span><h3><span class="municipality-emoji" aria-hidden="true">🌼</span>菊川市</h3></div><span class="town-number" aria-hidden="true">05</span></div>
+ <p class="town-tagline">茶畑の緑が、日常になる。</p><p class="town-description">菊川市の暮らしと手続きを、<br>必要な場面から探す。</p>
+ <div class="town-actions"><a class="town-main" href="https://kikugawa.enshu-lifehack.com/" aria-label="菊川ライフハックで暮らし・手続きを探す">暮らし・手続きを探す <span aria-hidden="true">→</span></a></div></div></article><article class="town-card" style="--town:#247684">
+ <div class="town-photo"><img src="/images/cities/omaezaki.webp" alt="御前崎市・御前埼灯台と海岸" width="960" height="640" loading="lazy" decoding="async"><span class="place-label">御前埼灯台と海岸</span><span class="town-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 51l5-27h10l5 27M24 24h16V13H24v11ZM23 13l9-7 9 7M32 6V3M20 51h24M28 33h8M9 17H3m52 0h6M6 57c6-6 12 6 18 0s12 6 18 0 12 6 18 0M16 8l-6-4m38 4 6-4"/></svg></span></div>
+ <div class="town-body"><div class="town-heading"><div><span class="town-en">OMAEZAKI</span><h3><span class="municipality-emoji" aria-hidden="true">🌊</span>御前崎市</h3></div><span class="town-number" aria-hidden="true">06</span></div>
+ <p class="town-tagline">海と風が、すぐそばに。</p><p class="town-description">御前崎市の暮らしと手続きを、<br>必要な場面から探す。</p>
+ <div class="town-actions"><a class="town-main" href="https://omaezaki.enshu-lifehack.com/" aria-label="御前崎ライフハックで暮らし・手続きを探す">暮らし・手続きを探す <span aria-hidden="true">→</span></a></div></div></article><article class="town-card" style="--town:#456c88">
+ <div class="town-photo"><img src="/images/cities/kosai.webp" alt="湖西市・新居関所" width="960" height="640" loading="lazy" decoding="async"><span class="place-label">新居関所</span><span class="town-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M33 7v39M27 12 10 39h17V12ZM38 17l14 22H38V17ZM9 46h46l-8 8H18l-9-8ZM5 59c5-4 10 4 15 0s10 4 15 0 10 4 15 0 8 2 10 0"/></svg></span></div>
+ <div class="town-body"><div class="town-heading"><div><span class="town-en">KOSAI</span><h3><span class="municipality-emoji" aria-hidden="true">🌅</span>湖西市</h3></div><span class="town-number" aria-hidden="true">07</span></div>
+ <p class="town-tagline">湖と海、街道がつなぐまち。</p><p class="town-description">湖西市の暮らしと手続きを、<br>必要な場面から探す。</p>
+ <div class="town-actions"><a class="town-main" href="https://kosai.enshu-lifehack.com/" aria-label="湖西ライフハックで暮らし・手続きを探す">暮らし・手続きを探す <span aria-hidden="true">→</span></a></div></div></article><article class="town-card" style="--town:#806048">
+ <div class="town-photo"><img src="/images/cities/hamamatsu.webp" alt="浜松市・浜松城" width="960" height="640" loading="lazy" decoding="async"><span class="place-label">浜松城</span><span class="town-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="13" width="46" height="41" rx="3"/><path d="M20 14v40m12-40v40m12-40v40"/><path d="M16 14h8v23h-8zm12 0h8v23h-8zm12 0h8v23h-8z" fill="currentColor" stroke="none"/></svg></span></div>
+ <div class="town-body"><div class="town-heading"><div><span class="town-en">HAMAMATSU</span><h3><span class="municipality-emoji" aria-hidden="true">🎹</span>浜松市</h3></div><span class="town-number" aria-hidden="true">08</span></div>
+ <p class="town-tagline">音楽と、ものづくりのまち。</p><p class="town-description">浜松市の暮らしと手続きを、<br>必要な場面から探す。</p>
+ <div class="town-actions"><a class="town-main" href="https://hamamatsu.enshu-lifehack.com/" aria-label="浜松ライフハックで暮らし・手続きを探す">暮らし・手続きを探す <span aria-hidden="true">→</span></a><a class="album-link" href="https://hamamatsualb.atawi.link/">浜松懐かし写真館 <span aria-hidden="true">↗</span></a></div></div></article></div></section>
+<section class="album-section" id="albums" aria-labelledby="albums-title"><div><p class="eyebrow">LOCAL MEMORIES</p><div class="album-title"><span><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="19" width="50" height="34" rx="6"/><path d="m19 19 5-9h16l5 9"/><circle cx="32" cy="36" r="10"/><path d="M48 26h2"/></svg></span><h2 id="albums-title">写真でたどる、<br>遠州の記憶。</h2></div><p>いつかの駅前、懐かしい街並み、暮らしの風景。<br>各地の懐かし写真館へご案内します。</p></div><div class="album-grid"><a href="https://iwataalb.atawi.link/">磐田懐かし写真館 <span aria-hidden="true">↗</span></a><a href="https://fukuroialb.atawi.link/">袋井懐かし写真館 <span aria-hidden="true">↗</span></a><a href="https://kakegawaalb.atawi.link/">掛川懐かし写真館 <span aria-hidden="true">↗</span></a><a href="https://morimachialb.atawi.link/">森町懐かし写真館 <span aria-hidden="true">↗</span></a><a href="https://hamamatsualb.atawi.link/">浜松懐かし写真館 <span aria-hidden="true">↗</span></a></div></section>  <section class="support-section company-support" aria-labelledby="support-title">
+ <div class="support-lead"><p class="eyebrow">FUJIGAOKA SERVICE / このサイトの運営会社</p><h2 id="support-title">親の介護も、実家のこれからも。<br><span>富士ヶ丘サービスにご相談ください。</span></h2><p>介護と不動産、両方の事業を行う私たちだからこそ、<br>ご家族の暮らしと、家の問題を一緒に考えます。</p></div>
+ <div class="support-grid">
+ <article class="service-card estate-service"><figure><img src="/images/support/office.webp" alt="磐田市見付・富士ヶ丘サービスの相談用事務室" width="840" height="460" loading="lazy"><figcaption>磐田市見付の相談スペース</figcaption></figure><div class="service-body"><p class="service-kicker"><span class="support-emoji" aria-hidden="true">🏠</span>実家・相続・空き家 <span class="free-badge">実家カルテ無料</span></p><h3>実家を売るか、残すか。<br>迷っている今、ご相談を。</h3><p>相続した家、親が施設へ入居した後の家、遠方で管理できない空き家。宅地建物取引士が調べ、<strong>ご家族で判断するための材料</strong>をお届けします。</p><p class="reassurance">売却未定でも利用できます。申込みだけで売却依頼にはなりません。</p><a class="service-cta" href="https://fudosan.atawi.link/?utm_source=enshu_lifehack&utm_medium=referral&utm_campaign=support_section&utm_content=karte_request#apply">無料の実家カルテを依頼する <span aria-hidden="true">→</span></a><div class="karte-benefits"><strong>無料の「ふじがおか実家カルテ」で分かること</strong><ul><li>家・土地の価格の目安</li><li>先に確認したい課題や手続き</li><li>ご家族で進める次の一歩</li></ul><p>調査結果をPDFにまとめ、メール・LINEでお届けします。</p></div><a class="service-secondary" href="https://fudosan.atawi.link/karte/sample/?utm_source=enshu_lifehack&utm_medium=referral&utm_campaign=support_section&utm_content=karte_sample">まずは届くカルテの見本を見る <span aria-hidden="true">↗</span></a><div class="service-contact"><span>電話で話したい方はこちら</span><a href="tel:0538313308">0538-31-3308</a><small>9:00〜18:00（水曜・日曜は予約制）</small></div><div class="service-extra"><a href="https://lin.ee/ZL9hXHf">LINEで実家・空き家を相談する ↗</a><a href="https://fudosan.atawi.link/?utm_source=enshu_lifehack&amp;utm_medium=referral&amp;utm_campaign=support_section">ATAWI FUDOSANを見る ↗</a></div><p class="service-note">物件の対応地域：遠州8市町。ご家族が遠方でも相談できます。<br>運営：富士ヶ丘サービス 不動産部／担当：大石浩之</p></div></article>
+ <article class="service-card care-service"><figure><img src="/images/support/mitsuke.webp" alt="磐田市見付のサービス付き高齢者向け住宅・ふじがおか見付連理枝" width="840" height="460" loading="lazy"><figcaption>ふじがおか見付連理枝</figcaption></figure><div class="service-body"><p class="service-kicker"><span class="support-emoji" aria-hidden="true">❤️</span>親の住まい・介護 <span class="care-badge">相談だけでも歓迎</span></p><h3>親の一人暮らし、心配。<br>その気持ちから、お話しください。</h3><p>離れて暮らす親のこと、退院後の生活、ご家族の介護負担。<strong>住まい・通う介護・ご自宅への支援</strong>を、今の暮らしに合わせて一緒に考えます。</p><p class="reassurance">ご家族だけで抱え込まず、まずは現在の状況をお聞かせください。</p><a class="service-cta" href="https://kaigo.atawi.link/visit/?utm_source=enshu_lifehack&utm_medium=referral&utm_campaign=support_section&utm_content=care_visit">見学・介護の相談を予約する <span aria-hidden="true">→</span></a><div class="karte-benefits"><strong>必要な支援を、具体的に確認できます</strong><ul><li>高齢者向け住宅の居室・料金・暮らし</li><li>デイサービス・訪問介護の利用</li><li>見学前に整理したい不安や希望</li></ul><p>施設への入居を決める前のご相談も受け付けています。</p></div><a class="service-secondary" href="https://kaigo.atawi.link/housing/?utm_source=enshu_lifehack&utm_medium=referral&utm_campaign=support_section&utm_content=care_housing">見付の居室・料金・サービスを見る <span aria-hidden="true">↗</span></a><div class="service-contact"><span>見付の住まい・介護のご相談</span><a href="tel:0538337070">0538-33-7070</a><small>9:00〜17:30／担当：野尻・大石</small></div><div class="care-contacts"><a href="tel:0538315551"><span>ケアプラン・在宅介護の相談</span><b>0538-31-5551</b></a><a href="tel:0538371010"><span>安久路の住まい・見学相談</span><b>0538-37-1010</b></a></div><div class="service-extra"><a href="https://www.fujigaoka-service.info/">富士ヶ丘サービスの介護事業を見る ↗</a></div></div></article>
+ </div><div class="housing-callout"><div><b>住み替え先の新築住宅をお探しですか。</b><p>町名・学区から、希望のエリアの新築分譲住宅を探せます。</p></div><a href="https://shinchikubukken.atawi.link/">新築分譲住宅を見る <span aria-hidden="true">→</span></a></div>
+</section>
 
-<main><div class="wrap">
-
-  <section class="hero">
-    <h1>遠州エリアの暮らしと手続きを、迷わず進めるために。</h1>
-    <p>遠州ライフハックは、遠州エリア（静岡県西部）で暮らす方が、必要な手続きや相談先にすばやくたどり着けるよう、各市町の公式情報を暮らしの場面ごとに整理する生活ナビです。</p>
-    <p>引っ越し、子育て、防災、税金、介護、住まい、相続、空き家のこと。「どのページを見ればいいのか」「何から確認すればいいのか」が分かりにくい情報を、目的別にたどれる形に整え、最終的には必ず各市町の公式ページへご案内します。</p>
-    <p class="muted">本サイトは公式情報の転載サイトではありません。暮らしの中で必要になる情報を探しやすく整理し、正確な確認先として各市町の公式ページへつなぐことを目的としています。</p>
-  </section>
-
-  <h2 class="sec">運用中</h2>
-  <div class="live-grid">
-  <a class="live-card" href="https://iwata.enshu-lifehack.com/">
-    <span class="ic municipality-emoji" aria-hidden="true">🌱</span>
-    <span class="body">
-      <span class="badge-live">公開中</span>
-      <div class="ttl">磐田ライフハック<img src="/favicons/iwata.svg" alt="" aria-hidden="true" class="soon-favicon"></div>
-      <div class="sub">磐田市の暮らしと手続きを、必要な場面から探せる生活ナビ</div>
-    </span>
-    <span class="arw" aria-hidden="true">›</span>
-  </a>
-  <a class="live-card" href="https://fukuroi.enshu-lifehack.com/">
-    <span class="ic municipality-emoji" aria-hidden="true">🍈</span>
-    <span class="body">
-      <span class="badge-live">公開中</span>
-      <div class="ttl">袋井ライフハック<img src="/favicons/fukuroi.svg" alt="" aria-hidden="true" class="soon-favicon"></div>
-      <div class="sub">袋井市の暮らしと手続きを、必要な場面から探せる生活ナビ</div>
-    </span>
-    <span class="arw" aria-hidden="true">›</span>
-  </a>
-  <a class="live-card" href="https://kakegawa.enshu-lifehack.com/">
-    <span class="ic municipality-emoji" aria-hidden="true">🍵</span>
-    <span class="body">
-      <span class="badge-live">公開中</span>
-      <div class="ttl">掛川ライフハック<img src="/favicons/kakegawa.svg" alt="" aria-hidden="true" class="soon-favicon"></div>
-      <div class="sub">掛川市の暮らしと手続きを、必要な場面から探せる生活ナビ</div>
-    </span>
-    <span class="arw" aria-hidden="true">›</span>
-  </a>
-  <a class="live-card" href="https://morimachi.enshu-lifehack.com/">
-    <span class="ic municipality-emoji" aria-hidden="true">🌲</span>
-    <span class="body">
-      <span class="badge-live">公開中</span>
-      <div class="ttl">森町ライフハック<img src="/favicons/mori.svg" alt="" aria-hidden="true" class="soon-favicon"></div>
-      <div class="sub">森町の暮らしと手続きを、必要な場面から探せる生活ナビ</div>
-    </span>
-    <span class="arw" aria-hidden="true">›</span>
-  </a>
-  <a class="live-card" href="https://kikugawa.enshu-lifehack.com/">
-    <span class="ic municipality-emoji" aria-hidden="true">🌼</span>
-    <span class="body">
-      <span class="badge-live">公開中</span>
-      <div class="ttl">菊川ライフハック<img src="/favicons/kikugawa.svg" alt="" aria-hidden="true" class="soon-favicon"></div>
-      <div class="sub">菊川市の暮らしと手続きを、必要な場面から探せる生活ナビ</div>
-    </span>
-    <span class="arw" aria-hidden="true">›</span>
-  </a>
-  <a class="live-card" href="https://omaezaki.enshu-lifehack.com/">
-    <span class="ic municipality-emoji" aria-hidden="true">🌊</span>
-    <span class="body">
-      <span class="badge-live">公開中</span>
-      <div class="ttl">御前崎ライフハック<img src="/favicons/omaezaki.svg" alt="" aria-hidden="true" class="soon-favicon"></div>
-      <div class="sub">御前崎市の暮らしと手続きを、必要な場面から探せる生活ナビ</div>
-    </span>
-    <span class="arw" aria-hidden="true">›</span>
-  </a>
-  <a class="live-card" href="https://kosai.enshu-lifehack.com/">
-    <span class="ic municipality-emoji" aria-hidden="true">🌅</span>
-    <span class="body">
-      <span class="badge-live">公開中</span>
-      <div class="ttl">湖西ライフハック<img src="/favicons/kosai.svg" alt="" aria-hidden="true" class="soon-favicon"></div>
-      <div class="sub">湖西市の暮らしと手続きを、必要な場面から探せる生活ナビ</div>
-    </span>
-    <span class="arw" aria-hidden="true">›</span>
-  </a>
-  <a class="live-card" href="https://hamamatsu.enshu-lifehack.com/">
-    <span class="ic municipality-emoji" aria-hidden="true">🎹</span>
-    <span class="body">
-      <span class="badge-live">公開中</span>
-      <div class="ttl">浜松ライフハック<img src="/favicons/hamamatsu-chuo.svg" alt="" aria-hidden="true" class="soon-favicon"></div>
-      <div class="sub">浜松市の暮らしと手続きを、必要な場面から探せる生活ナビ</div>
-    </span>
-    <span class="arw" aria-hidden="true">›</span>
-  </a>
-  </div>
-
-  <div class="note">
-    現在、<a href="https://iwata.enshu-lifehack.com/">磐田ライフハック</a>・<a href="https://fukuroi.enshu-lifehack.com/">袋井ライフハック</a>・<a href="https://kakegawa.enshu-lifehack.com/">掛川ライフハック</a>・<a href="https://morimachi.enshu-lifehack.com/">森町ライフハック</a>・<a href="https://kikugawa.enshu-lifehack.com/">菊川ライフハック</a>・<a href="https://omaezaki.enshu-lifehack.com/">御前崎ライフハック</a>・<a href="https://kosai.enshu-lifehack.com/">湖西ライフハック</a>・<a href="https://hamamatsu.enshu-lifehack.com/">浜松ライフハック</a> の8市町版をご利用いただけます。
-  </div>
-
-  <section class="support-section company-support" aria-labelledby="support-title">
-    <h2 id="support-title">お困りのときは、相談先の一つとしてご利用ください</h2>
-
-    <p>
-      相続した実家や空き家、介護、住まいに関する悩みは、行政手続きだけでは整理しきれないことがあります。
-      遠州ライフハックで公式情報を確認したうえで、個別の事情について相談したい場合は、地域の相談先の一つとしてご利用ください。
-    </p>
-
-    <div class="support-grid">
-      <article class="support-card">
-        <h3><span class="support-emoji" aria-hidden="true">🏠</span>家・住まいについて相談したい</h3>
-        <p>
-          富士ヶ丘サービスでは、相続した実家・空き家・親の家の整理についてご相談をお受けしています。
-          介護と不動産の両方に関わる立場から、売却・管理・解体・今後の住まい方について整理のお手伝いをしています。
-        </p>
-        <p>磐田市への転居や住み替えで、新築を町名から探したい方には、同じ運営元の<a href="https://shinchikubukken.atawi.link/">ATAWI 新築分譲住宅</a>もご案内しています。各市町の手続きとあわせて、具体的な住まいを比較する際にご利用ください。</p>
-        <p class="support-contact">
-          <strong>富士ヶ丘サービス 不動産部</strong><br>
-          TEL：0538-31-3308
-        </p>
-        <p class="support-links">
-          <a href="https://fudosan.atawi.link/?utm_source=enshu_lifehack&utm_medium=referral&utm_campaign=support_section" target="_blank" rel="noopener">ATAWI FUDOSAN ↗</a>
-          <a href="https://line.me/" target="_blank" rel="noopener">LINE公式 ↗</a>
-        </p>
-        <p>
-          <a class="support-button" href="https://fudosan.atawi.link/?utm_source=enshu_lifehack&utm_medium=referral&utm_campaign=support_section" target="_blank" rel="noopener">
-            相続した実家・空き家について相談する
-          </a>
-        </p>
-      </article>
-
-      <article class="support-card">
-        <h3><span class="support-emoji" aria-hidden="true">❤️</span>介護・高齢者について相談したい</h3>
-        <p>
-          ケアマネジャー、介護保険、介護施設、高齢者支援などのご相談を承っています。
-          必要に応じて、相談先の一つとしてご利用ください。
-        </p>
-        <p class="support-contact">
-          <strong>富士ヶ丘サービス 介護部門</strong><br>
-          居宅介護支援 TEL：0538-31-5551<br>
-          サ高住 見付 TEL：0538-31-3308<br>
-          サ高住 安久路 TEL：0538-37-1010
-        </p>
-        <p class="support-links">
-          <a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">ホームページ ↗</a>
-        </p>
-        <p>
-          <a class="support-button" href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">
-            介護の相談先を見る
-          </a>
-        </p>
-      </article>
-    </div>
-  </section>
-
-<section class="note"><h2 class="sec">季節や暦を楽しむ読み物</h2><p>日々の暮らしの話題に、同じ運営元の<a href="https://koyomiuuranai.atawi.link/">ATAWI暦占い</a>もご覧ください。二十四節気や昔からの暦の言葉、今日の暮らしのヒントを紹介しています。</p></section>
-</div></main>
-
-<footer class="site"><div class="wrap">
+<section class="all-sites" id="all-sites" aria-labelledby="all-sites-title"><div class="section-heading"><div><p class="eyebrow">40 WEBSITES / ONE LOCAL MISSION</p><h2 id="all-sites-title">40サイトで見る、<br>大石浩之の活動。</h2></div></div><p class="directory-intro">商売のためのサイトから、まちの記録、学びや文化の入口まで。<br>気になるテーマから、私の活動をご覧ください。</p><nav class="directory-nav" aria-label="活動テーマ"><a href="#group-home">住まい・介護</a><a href="#group-life">暮らしの案内</a><a href="#group-photos">写真と記憶</a><a href="#group-learning">学び・文化</a><a href="#group-schools">学校と地域</a><a href="#group-community">人と地域</a></nav><div class="directory-grid"><section class="directory-group" id="group-home" aria-labelledby="title-home"><div class="directory-group-head"><h3 id="title-home">住まい・介護</h3><span>06 SITES</span></div><p>家と、ご家族のこれからを考える。</p><ul><li><a class="project-link" href="https://fudosan.atawi.link/"><span class="project-no">01</span><span><strong>ATAWI FUDOSAN</strong><small>実家・相続・空き家の相談と無料の実家カルテ</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://baikyaku.atawi.link/"><span class="project-no">36</span><span><strong>不動産売却相談室</strong><small>不動産を売る前の疑問と準備</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://ninbai.atawi.link/"><span class="project-no">37</span><span><strong>任意売却相談室</strong><small>住宅ローンと任意売却の相談案内</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://shinchikubukken.atawi.link/"><span class="project-no">38</span><span><strong>新築分譲住宅</strong><small>町名から探す新築分譲住宅</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://fudosan-guide.atawi.link/"><span class="project-no">39</span><span><strong>不動産屋ガイド</strong><small>不動産会社を選ぶための情報</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://kaigo.atawi.link/"><span class="project-no">40</span><span><strong>KAIGO</strong><small>磐田市見付の住まい・デイサービス・訪問介護</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li></ul></section><section class="directory-group" id="group-life" aria-labelledby="title-life"><div class="directory-group-head"><h3 id="title-life">暮らしの案内</h3><span>09 SITES</span></div><p>必要な手続きと公式情報へつなぐ。</p><ul><li><a class="project-link" href="https://morimachi.enshu-lifehack.com/"><span class="project-no">08</span><span><strong>森町ライフハック</strong><small>森町の暮らし・手続き・地域情報</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://iwata.enshu-lifehack.com/"><span class="project-no">09</span><span><strong>磐田ライフハック</strong><small>磐田市の暮らし・手続き・地域情報</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://fukuroi.enshu-lifehack.com/"><span class="project-no">24</span><span><strong>袋井ライフハック</strong><small>袋井市の暮らし・手続き・地域情報</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://kakegawa.enshu-lifehack.com/"><span class="project-no">25</span><span><strong>掛川ライフハック</strong><small>掛川市の暮らし・手続き・地域情報</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://hamamatsu.enshu-lifehack.com/"><span class="project-no">26</span><span><strong>浜松ライフハック</strong><small>浜松市の暮らし・手続き・地域情報</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://enshu-lifehack.com/"><span class="project-no">27</span><span><strong>遠州ライフハック</strong><small>遠州8市町と大石浩之の活動をつなぐ本サイト</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://kikugawa.enshu-lifehack.com/"><span class="project-no">28</span><span><strong>菊川ライフハック</strong><small>菊川市の暮らし・手続き・地域情報</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://omaezaki.enshu-lifehack.com/"><span class="project-no">29</span><span><strong>御前崎ライフハック</strong><small>御前崎市の暮らし・手続き・地域情報</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://kosai.enshu-lifehack.com/"><span class="project-no">30</span><span><strong>湖西ライフハック</strong><small>湖西市の暮らし・手続き・地域情報</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li></ul></section><section class="directory-group" id="group-photos" aria-labelledby="title-photos"><div class="directory-group-head"><h3 id="title-photos">写真と記憶</h3><span>05 SITES</span></div><p>懐かしい風景を、次の世代へ。</p><ul><li><a class="project-link" href="https://iwataalb.atawi.link/"><span class="project-no">03</span><span><strong>磐田懐かし写真館</strong><small>写真でたどる磐田の街と暮らし</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://fukuroialb.atawi.link/"><span class="project-no">04</span><span><strong>袋井懐かし写真館</strong><small>写真でたどる袋井の街と暮らし</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://morimachialb.atawi.link/"><span class="project-no">05</span><span><strong>森町懐かし写真館</strong><small>写真でたどる森町の街と暮らし</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://kakegawaalb.atawi.link/"><span class="project-no">06</span><span><strong>掛川懐かし写真館</strong><small>写真でたどる掛川の街と暮らし</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://hamamatsualb.atawi.link/"><span class="project-no">07</span><span><strong>浜松懐かし写真館</strong><small>写真でたどる浜松の街と暮らし</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li></ul></section><section class="directory-group" id="group-learning" aria-labelledby="title-learning"><div class="directory-group-head"><h3 id="title-learning">学び・文化</h3><span>10 SITES</span></div><p>知る・読む・聴く楽しさを、身近に。</p><ul><li><a class="project-link" href="https://math.atawi.link/"><span class="project-no">10</span><span><strong>ATAWI数学</strong><small>数学を学ぶための入口</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://englishnovel.atawi.link/"><span class="project-no">11</span><span><strong>ATAWI英語小説</strong><small>英語の小説に親しむ</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://koten.atawi.link/"><span class="project-no">12</span><span><strong>ATAWI古典文学</strong><small>古典文学を読み、味わう</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://koyomiuuranai.atawi.link/"><span class="project-no">13</span><span><strong>ATAWI暦占い</strong><small>暦の言葉と季節の読み物</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://kamon.atawi.link/"><span class="project-no">14</span><span><strong>ATAWI家紋</strong><small>家紋の形と文化を知る</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://temple.atawi.link/"><span class="project-no">31</span><span><strong>ATAWI TEMPLE</strong><small>お寺から地域の文化を知る</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://shrine.atawi.link/"><span class="project-no">32</span><span><strong>ATAWI SHRINE</strong><small>神社から地域の文化を知る</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://park.atawi.link/"><span class="project-no">33</span><span><strong>ATAWI PARK</strong><small>公園を探して、まちへ出かける</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://atawimusic.link/"><span class="project-no">34</span><span><strong>ATAWI MUSIC</strong><small>音楽に親しむ入口</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://atawicomedy.link/"><span class="project-no">35</span><span><strong>ATAWI COMEDY</strong><small>笑いとエンターテインメントの入口</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li></ul></section><section class="directory-group" id="group-schools" aria-labelledby="title-schools"><div class="directory-group-head"><h3 id="title-schools">学校と地域</h3><span>08 SITES</span></div><p>地域の学校と、その歩みを知る。</p><ul><li><a class="project-link" href="https://bannan.atawi.link/"><span class="project-no">15</span><span><strong>ATAWI磐南高</strong><small>磐田南高校にまつわる情報（非公式）</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://iwakita.atawi.link/"><span class="project-no">16</span><span><strong>ATAWI磐北高</strong><small>磐田北高校にまつわる情報（非公式）</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://iwano.atawi.link/"><span class="project-no">17</span><span><strong>ATAWI磐農高</strong><small>磐田農業高校にまつわる情報（非公式）</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://iwanishi.atawi.link/"><span class="project-no">18</span><span><strong>ATAWI磐西高</strong><small>磐田西高校にまつわる情報（非公式）</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://banto.atawi.link/"><span class="project-no">19</span><span><strong>ATAWI磐東高</strong><small>磐田東高校にまつわる情報（非公式）</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://kakenishi.atawi.link/"><span class="project-no">20</span><span><strong>ATAWI掛西高</strong><small>掛川西高校にまつわる情報（非公式）</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://roiko.atawi.link/"><span class="project-no">21</span><span><strong>ATAWIろいこう</strong><small>袋井高校にまつわる情報（非公式）</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://roisho.atawi.link/"><span class="project-no">22</span><span><strong>ATAWIろいしょう</strong><small>袋井商業高校にまつわる情報（非公式）</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li></ul></section><section class="directory-group" id="group-community" aria-labelledby="title-community"><div class="directory-group-head"><h3 id="title-community">人と地域</h3><span>02 SITES</span></div><p>考えを伝え、まちの物語を記録する。</p><ul><li><a class="project-link" href="https://oishi-hiroyuki.org/"><span class="project-no">02</span><span><strong>大石ひろゆき公式サイト</strong><small>大石浩之の活動・考え・地域への取り組み</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li><li><a class="project-link" href="https://iwata-monogatari.net/"><span class="project-no">23</span><span><strong>磐田物語</strong><small>磐田の歴史・場所・地域の物語</small></span><span class="project-arrow" aria-hidden="true">↗</span></a></li></ul></section></div><aside class="maker-note"><div><p class="eyebrow">BUILD FOR YOUR BUSINESS</p><h3>自分の商売のためのサイト、<br>自分で作ってみませんか。</h3><p>実際に40サイトを作りながら、仕事や地域の活動に役立つ使い方を試しています。<br>作り方の話なら、いつでもします。</p></div><a href="https://lin.ee/ZL9hXHf">サイトづくりの話をする ↗</a></aside></section><section class="note"><h2 class="sec">季節や暦を楽しむ読み物</h2><p>日々の暮らしの話題に、同じ運営元の<a href="https://koyomiuuranai.atawi.link/">ATAWI暦占い</a>もご覧ください。二十四節気や昔からの暦の言葉、今日の暮らしのヒントを紹介しています。</p></section>
+<details class="credits"><summary>写真の出典・利用条件</summary><p>市町カードの写真は各地域の風景です。懐かし写真館の収蔵写真とは別に掲載しています。出典：Wikimedia Commons。縮小・WebP変換し、表示枠に合わせてトリミングしています。各写真には以下の利用条件が適用されます。</p><ul><li>磐田市・旧見付学校：<a href="https://commons.wikimedia.org/wiki/File:Former_Mitsuke_School-1.jpg">Saigen Jiro</a> / <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a></li><li>袋井市・法多山 尊永寺：<a href="https://commons.wikimedia.org/wiki/File:Hattasan_Hond%C5%8D.JPG">Yanajin33</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a></li><li>掛川市・掛川城：<a href="https://commons.wikimedia.org/wiki/File:Kakegawa_Jo_201803mid.jpg">行政課</a> / <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a></li><li>森町・小國神社の杉並木：<a href="https://commons.wikimedia.org/wiki/File:Okuni-jinja_(Mori),_suginamiki.jpg">Saigen Jiro</a> / <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a></li><li>菊川市・茶畑と東海道新幹線：<a href="https://commons.wikimedia.org/wiki/File:Tokaido-Shinkansen_N700S_Kikugawa.jpg">MaedaAkihiko</a> / <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a></li><li>御前崎市・御前埼灯台と海岸：<a href="https://commons.wikimedia.org/wiki/File:Omaezaki_and_Lighthouse.jpg">Alpsdake</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></li><li>湖西市・新居関所：<a href="https://commons.wikimedia.org/wiki/File:Araisekisho.JPG">A10ml at Japanese Wikipedia</a> / Public domain</li><li>浜松市・浜松城：<a href="https://commons.wikimedia.org/wiki/File:Hamamatsu_Castle,_enkei-3.jpg">Saigen Jiro</a> / <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a></li></ul></details></div></main><footer class="site"><div class="wrap">
   <div><b>遠州ライフハック</b></div>
   <div class="muted" style="margin:6px 0 10px">運営：富士ヶ丘サービス株式会社/電話番号0538-31-3308</div>
   <div class="muted" style="margin:0 0 10px"><a href="https://fudosan.atawi.link/?utm_source=enshu_lifehack&utm_medium=referral&utm_campaign=footer" style="color:#fff;text-decoration:underline;">ATAWI FUDOSAN｜実家じまい・相続空き家相談</a></div>

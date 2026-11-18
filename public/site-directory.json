@@ -1,0 +1,286 @@
+{
+  "asOf": "2026-11-19",
+  "started": "2026-06-20",
+  "sites": [
+    {
+      "number": 1,
+      "name": "ATAWI FUDOSAN",
+      "url": "https://fudosan.atawi.link/",
+      "category": "住まい・介護",
+      "description": "実家・相続・空き家の相談と無料の実家カルテ"
+    },
+    {
+      "number": 2,
+      "name": "大石ひろゆき公式サイト",
+      "url": "https://oishi-hiroyuki.org/",
+      "category": "人と地域",
+      "description": "大石浩之の活動・考え・地域への取り組み"
+    },
+    {
+      "number": 3,
+      "name": "磐田懐かし写真館",
+      "url": "https://iwataalb.atawi.link/",
+      "category": "写真と記憶",
+      "description": "写真でたどる磐田の街と暮らし"
+    },
+    {
+      "number": 4,
+      "name": "袋井懐かし写真館",
+      "url": "https://fukuroialb.atawi.link/",
+      "category": "写真と記憶",
+      "description": "写真でたどる袋井の街と暮らし"
+    },
+    {
+      "number": 5,
+      "name": "森町懐かし写真館",
+      "url": "https://morimachialb.atawi.link/",
+      "category": "写真と記憶",
+      "description": "写真でたどる森町の街と暮らし"
+    },
+    {
+      "number": 6,
+      "name": "掛川懐かし写真館",
+      "url": "https://kakegawaalb.atawi.link/",
+      "category": "写真と記憶",
+      "description": "写真でたどる掛川の街と暮らし"
+    },
+    {
+      "number": 7,
+      "name": "浜松懐かし写真館",
+      "url": "https://hamamatsualb.atawi.link/",
+      "category": "写真と記憶",
+      "description": "写真でたどる浜松の街と暮らし"
+    },
+    {
+      "number": 8,
+      "name": "森町ライフハック",
+      "url": "https://morimachi.enshu-lifehack.com/",
+      "category": "暮らしの案内",
+      "description": "森町の暮らし・手続き・地域情報"
+    },
+    {
+      "number": 9,
+      "name": "磐田ライフハック",
+      "url": "https://iwata.enshu-lifehack.com/",
+      "category": "暮らしの案内",
+      "description": "磐田市の暮らし・手続き・地域情報"
+    },
+    {
+      "number": 10,
+      "name": "ATAWI数学",
+      "url": "https://math.atawi.link/",
+      "category": "学び・文化",
+      "description": "数学を学ぶための入口"
+    },
+    {
+      "number": 11,
+      "name": "ATAWI英語小説",
+      "url": "https://englishnovel.atawi.link/",
+      "category": "学び・文化",
+      "description": "英語の小説に親しむ"
+    },
+    {
+      "number": 12,
+      "name": "ATAWI古典文学",
+      "url": "https://koten.atawi.link/",
+      "category": "学び・文化",
+      "description": "古典文学を読み、味わう"
+    },
+    {
+      "number": 13,
+      "name": "ATAWI暦占い",
+      "url": "https://koyomiuuranai.atawi.link/",
+      "category": "学び・文化",
+      "description": "暦の言葉と季節の読み物"
+    },
+    {
+      "number": 14,
+      "name": "ATAWI家紋",
+      "url": "https://kamon.atawi.link/",
+      "category": "学び・文化",
+      "description": "家紋の形と文化を知る"
+    },
+    {
+      "number": 15,
+      "name": "ATAWI磐南高",
+      "url": "https://bannan.atawi.link/",
+      "category": "学校と地域",
+      "description": "磐田南高校にまつわる情報（非公式）"
+    },
+    {
+      "number": 16,
+      "name": "ATAWI磐北高",
+      "url": "https://iwakita.atawi.link/",
+      "category": "学校と地域",
+      "description": "磐田北高校にまつわる情報（非公式）"
+    },
+    {
+      "number": 17,
+      "name": "ATAWI磐農高",
+      "url": "https://iwano.atawi.link/",
+      "category": "学校と地域",
+      "description": "磐田農業高校にまつわる情報（非公式）"
+    },
+    {
+      "number": 18,
+      "name": "ATAWI磐西高",
+      "url": "https://iwanishi.atawi.link/",
+      "category": "学校と地域",
+      "description": "磐田西高校にまつわる情報（非公式）"
+    },
+    {
+      "number": 19,
+      "name": "ATAWI磐東高",
+      "url": "https://banto.atawi.link/",
+      "category": "学校と地域",
+      "description": "磐田東高校にまつわる情報（非公式）"
+    },
+    {
+      "number": 20,
+      "name": "ATAWI掛西高",
+      "url": "https://kakenishi.atawi.link/",
+      "category": "学校と地域",
+      "description": "掛川西高校にまつわる情報（非公式）"
+    },
+    {
+      "number": 21,
+      "name": "ATAWIろいこう",
+      "url": "https://roiko.atawi.link/",
+      "category": "学校と地域",
+      "description": "袋井高校にまつわる情報（非公式）"
+    },
+    {
+      "number": 22,
+      "name": "ATAWIろいしょう",
+      "url": "https://roisho.atawi.link/",
+      "category": "学校と地域",
+      "description": "袋井商業高校にまつわる情報（非公式）"
+    },
+    {
+      "number": 23,
+      "name": "磐田物語",
+      "url": "https://iwata-monogatari.net/",
+      "category": "人と地域",
+      "description": "磐田の歴史・場所・地域の物語"
+    },
+    {
+      "number": 24,
+      "name": "袋井ライフハック",
+      "url": "https://fukuroi.enshu-lifehack.com/",
+      "category": "暮らしの案内",
+      "description": "袋井市の暮らし・手続き・地域情報"
+    },
+    {
+      "number": 25,
+      "name": "掛川ライフハック",
+      "url": "https://kakegawa.enshu-lifehack.com/",
+      "category": "暮らしの案内",
+      "description": "掛川市の暮らし・手続き・地域情報"
+    },
+    {
+      "number": 26,
+      "name": "浜松ライフハック",
+      "url": "https://hamamatsu.enshu-lifehack.com/",
+      "category": "暮らしの案内",
+      "description": "浜松市の暮らし・手続き・地域情報"
+    },
+    {
+      "number": 27,
+      "name": "遠州ライフハック",
+      "url": "https://enshu-lifehack.com/",
+      "category": "暮らしの案内",
+      "description": "遠州8市町と大石浩之の活動をつなぐ本サイト"
+    },
+    {
+      "number": 28,
+      "name": "菊川ライフハック",
+      "url": "https://kikugawa.enshu-lifehack.com/",
+      "category": "暮らしの案内",
+      "description": "菊川市の暮らし・手続き・地域情報"
+    },
+    {
+      "number": 29,
+      "name": "御前崎ライフハック",
+      "url": "https://omaezaki.enshu-lifehack.com/",
+      "category": "暮らしの案内",
+      "description": "御前崎市の暮らし・手続き・地域情報"
+    },
+    {
+      "number": 30,
+      "name": "湖西ライフハック",
+      "url": "https://kosai.enshu-lifehack.com/",
+      "category": "暮らしの案内",
+      "description": "湖西市の暮らし・手続き・地域情報"
+    },
+    {
+      "number": 31,
+      "name": "ATAWI TEMPLE",
+      "url": "https://temple.atawi.link/",
+      "category": "学び・文化",
+      "description": "お寺から地域の文化を知る"
+    },
+    {
+      "number": 32,
+      "name": "ATAWI SHRINE",
+      "url": "https://shrine.atawi.link/",
+      "category": "学び・文化",
+      "description": "神社から地域の文化を知る"
+    },
+    {
+      "number": 33,
+      "name": "ATAWI PARK",
+      "url": "https://park.atawi.link/",
+      "category": "学び・文化",
+      "description": "公園を探して、まちへ出かける"
+    },
+    {
+      "number": 34,
+      "name": "ATAWI MUSIC",
+      "url": "https://atawimusic.link/",
+      "category": "学び・文化",
+      "description": "音楽に親しむ入口"
+    },
+    {
+      "number": 35,
+      "name": "ATAWI COMEDY",
+      "url": "https://atawicomedy.link/",
+      "category": "学び・文化",
+      "description": "笑いとエンターテインメントの入口"
+    },
+    {
+      "number": 36,
+      "name": "不動産売却相談室",
+      "url": "https://baikyaku.atawi.link/",
+      "category": "住まい・介護",
+      "description": "不動産を売る前の疑問と準備"
+    },
+    {
+      "number": 37,
+      "name": "任意売却相談室",
+      "url": "https://ninbai.atawi.link/",
+      "category": "住まい・介護",
+      "description": "住宅ローンと任意売却の相談案内"
+    },
+    {
+      "number": 38,
+      "name": "新築分譲住宅",
+      "url": "https://shinchikubukken.atawi.link/",
+      "category": "住まい・介護",
+      "description": "町名から探す新築分譲住宅"
+    },
+    {
+      "number": 39,
+      "name": "不動産屋ガイド",
+      "url": "https://fudosan-guide.atawi.link/",
+      "category": "住まい・介護",
+      "description": "不動産会社を選ぶための情報"
+    },
+    {
+      "number": 40,
+      "name": "KAIGO",
+      "url": "https://kaigo.atawi.link/",
+      "category": "住まい・介護",
+      "description": "磐田市見付の住まい・デイサービス・訪問介護"
+    }
+  ]
+}
