@@ -1,0 +1,45 @@
+/* Activity showcase: compact full-width groups, visual identity and depth. */
+.all-sites.sites-showcase{margin:48px 0 32px;padding:0;border:0}
+.sites-showcase .directory-title-panel{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;padding:30px 34px;background:linear-gradient(115deg,#102f2d,#255b4a);color:#fff;border:1px solid #407665;border-bottom:5px solid #c6a86c;border-radius:12px 12px 0 0;box-shadow:0 10px 22px #102f2d26}
+.sites-showcase .eyebrow{color:#e2c58b;font-size:12px;margin-bottom:10px;letter-spacing:.12em}
+.sites-showcase h2{font-family:"Yu Mincho",serif;font-size:clamp(28px,3vw,38px);line-height:1.45;margin:0}
+.sites-showcase .directory-intro{font-size:16px;line-height:1.8;color:#e3eee8;margin:14px 0 0}
+.directory-portrait{display:flex;align-items:center;gap:18px;border-left:1px solid #719283;padding-left:28px}
+.directory-portrait img{width:104px;height:148px;object-fit:cover;border:4px solid #fff;border-radius:7px;transform:rotate(3deg);box-shadow:6px 9px 0 #08292466}
+.directory-portrait span{font-size:14px;line-height:1.8}.directory-portrait strong{display:block;font:700 64px/1 Georgia,serif;color:#edce8e;letter-spacing:-.05em;margin-bottom:5px}
+.sites-showcase .directory-nav{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin:0 0 22px;padding:16px;background:#e5ebe7;border:1px solid #cedbd2;border-radius:0 0 10px 10px}
+.sites-showcase .directory-nav a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:58px;padding:10px 8px;background:#fff;border:1px solid #d3ded7;border-bottom:3px solid var(--category);border-radius:6px;box-shadow:0 3px 5px #153d2912;font-size:14px;font-weight:700;color:var(--category)}
+.sites-showcase .directory-nav a>span{width:24px;height:24px;flex:none}.sites-showcase .directory-nav a:hover{background:#f2f8f4;transform:translateY(-2px)}
+.sites-showcase .directory-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+.sites-showcase .directory-group{padding:0;border:1px solid #d5ded8;border-radius:12px;background:#edf1ee;overflow:hidden;box-shadow:0 6px 0 #c9d4cc,0 15px 24px #183e2c12;scroll-margin-top:20px}
+.directory-cover{height:148px;position:relative;background:var(--category);overflow:hidden}
+.directory-cover>img{position:absolute;right:0;top:0;width:60%;height:100%;object-fit:cover;object-position:center 46%}
+.directory-cover:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--category) 25%,transparent 110%)}
+.directory-cover-copy{position:relative;z-index:1;display:flex;align-items:center;gap:20px;height:100%;padding:22px 28px;color:white;width:100%}
+.category-icon{width:64px;height:64px;padding:12px;flex:none;border:1px solid #ffffff70;border-radius:14px;background:#ffffff15;box-shadow:0 5px 0 #0002}
+.directory-cover-copy>div{flex:1}.sites-showcase .directory-group h3{font-family:"Yu Mincho",serif;font-size:28px;line-height:1.4;margin:0;color:white}
+.directory-cover-copy p{font-size:16px;color:#fff;margin:8px 0 0;text-shadow:0 1px 5px #0005}
+.sites-showcase .directory-group-head>span{font-size:13px;color:#fff;text-shadow:0 1px 6px #000}
+.cover-caption{position:absolute;right:16px;bottom:9px;z-index:1;color:#fff;font-size:11px;padding:2px 7px;background:#0b231db3;border-radius:3px}
+.sites-showcase .directory-group ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:18px;list-style:none;margin:0}
+.sites-showcase .directory-group li{border:0;min-width:0;display:flex}
+.sites-showcase .project-link{width:100%;display:grid;grid-template-columns:62px minmax(0,1fr);gap:14px;align-items:center;padding:14px;background:#fff;border:1px solid #d9e3dc;border-bottom:3px solid #c7d4cb;border-radius:7px;box-shadow:0 3px 8px #15382b0b;text-decoration:none;transition:transform .18s,box-shadow .18s}
+.sites-showcase .project-link:hover{transform:translateY(-3px);border-color:var(--category);box-shadow:0 8px 15px #143b2520;background:#fff}
+.project-art{height:62px;width:62px;display:grid;place-items:center;border-radius:10px;background:color-mix(in srgb,var(--category) 12%,white);color:var(--category);overflow:hidden;box-shadow:inset 0 0 0 1px #00000008}
+.project-art>svg{width:38px;height:38px}.project-art>img{width:100%;height:100%;object-fit:cover}.project-link>span:last-child{min-width:0}
+.sites-showcase .project-link strong{font-size:16px;line-height:1.55;color:#183f35;overflow-wrap:anywhere}
+.sites-showcase .project-link small{font-size:14px;line-height:1.65;color:#53655c;margin-top:5px;overflow-wrap:anywhere}
+.sites-showcase #group-schools ul{grid-template-columns:repeat(4,minmax(0,1fr))}
+.sites-showcase #group-schools .project-link{grid-template-columns:40px minmax(0,1fr);gap:10px;padding:13px 11px}
+.sites-showcase #group-schools .project-art{width:40px;height:48px}.sites-showcase #group-schools svg{width:30px;height:30px}
+.sites-showcase #group-community ul{grid-template-columns:1fr 1fr}
+.sites-showcase .maker-note{margin-top:26px;border:1px solid #b7cabc;border-left:5px solid #325c49;border-radius:8px;box-shadow:0 5px 0 #c6d5c8;padding:25px 30px;background:#e1eadf}
+.sites-showcase .maker-note h3{font-size:25px}.sites-showcase .maker-note p:not(.eyebrow){font-size:16px}.sites-showcase .maker-note .eyebrow{color:#526d49}
+.sites-showcase .maker-note>a{background:#174c41;color:white;border:1px solid #103c32;border-bottom:4px solid #082e27;border-radius:6px;font-size:15px;box-shadow:0 4px 10px #123e3026}
+@media(max-width:1050px){.directory-portrait{display:none}.sites-showcase .directory-title-panel{grid-template-columns:1fr}.sites-showcase .directory-nav{grid-template-columns:repeat(3,minmax(0,1fr))}.sites-showcase .directory-group ul,.sites-showcase #group-schools ul{grid-template-columns:repeat(2,minmax(0,1fr))}.sites-showcase #group-schools .project-link{grid-template-columns:62px minmax(0,1fr);gap:14px;padding:14px}.sites-showcase #group-schools .project-art{width:62px;height:62px}}
+@media(max-width:700px){.sites-showcase .directory-title-panel{padding:25px 22px}.sites-showcase .directory-intro br{display:none}.sites-showcase .directory-nav{gap:8px;padding:12px;grid-template-columns:repeat(2,minmax(0,1fr))}.sites-showcase .directory-nav a{font-size:14px;min-height:55px}.sites-showcase .directory-grid{gap:22px}.directory-cover{height:156px}.directory-cover>img{width:100%}.directory-cover:after{background:linear-gradient(90deg,var(--category),#102f2d55)}.directory-cover-copy{padding:18px;gap:12px}.category-icon{width:48px;height:48px;padding:9px}.sites-showcase .directory-group h3{font-size:24px}.directory-cover-copy p{font-size:14px;line-height:1.7;max-width:210px}.sites-showcase .directory-group-head>span{font-size:10px;position:absolute;right:12px;top:10px}.cover-caption{font-size:10px;right:10px;bottom:7px;max-width:calc(100% - 20px)}.sites-showcase .directory-group ul,.sites-showcase #group-schools ul,.sites-showcase #group-community ul{grid-template-columns:1fr;padding:12px;gap:9px}.sites-showcase .project-link,.sites-showcase #group-schools .project-link{padding:13px 12px;gap:13px;grid-template-columns:54px minmax(0,1fr)}.project-art,.sites-showcase #group-schools .project-art{width:54px;height:60px}.sites-showcase .project-link strong{font-size:16px}.sites-showcase .project-link small{font-size:14px}.sites-showcase .maker-note{padding:23px 20px}.sites-showcase .maker-note h3{font-size:23px}}
+@media(prefers-reduced-motion:reduce){.sites-showcase .project-link{transition:none}.sites-showcase .project-link:hover,.sites-showcase .directory-nav a:hover{transform:none}}
+
+/* Balance incomplete rows so category panels do not contain empty card slots. */
+@media(min-width:1051px){.sites-showcase #group-learning ul,.sites-showcase #group-photos ul{grid-template-columns:repeat(6,minmax(0,1fr))}.sites-showcase #group-learning li,.sites-showcase #group-photos li{grid-column:span 2}.sites-showcase #group-learning li:nth-child(n+7),.sites-showcase #group-photos li:nth-child(-n+2){grid-column:span 3}}
+@media(min-width:701px) and (max-width:1050px){.sites-showcase #group-photos li:last-child,.sites-showcase #group-life li:last-child{grid-column:span 2}}
