@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-19",
+  "asOf": "2026-11-21",
   "started": "2026-06-20",
   "sites": [
     {
@@ -91,7 +91,7 @@
       "name": "ATAWI暦占い",
       "url": "https://koyomiuuranai.atawi.link/",
       "category": "学び・文化",
-      "description": "暦の言葉と季節の読み物"
+      "description": "二十四節気・暦の言葉と暮らしのヒント"
     },
     {
       "number": 14,
@@ -281,6 +281,27 @@
       "url": "https://kaigo.atawi.link/",
       "category": "住まい・介護",
       "description": "磐田市見付の住まい・デイサービス・訪問介護"
+    },
+    {
+      "number": 41,
+      "name": "菊川懐かし写真館",
+      "url": "https://kikugawaalb.atawi.link/",
+      "category": "写真と記憶",
+      "description": "写真でたどる菊川の街と暮らし"
+    },
+    {
+      "number": 42,
+      "name": "御前崎懐かし写真館",
+      "url": "https://omaezakialb.atawi.link/",
+      "category": "写真と記憶",
+      "description": "写真でたどる御前崎の街と暮らし"
+    },
+    {
+      "number": 43,
+      "name": "湖西懐かし写真館",
+      "url": "https://kosaialb.atawi.link/",
+      "category": "写真と記憶",
+      "description": "写真でたどる湖西の街と暮らし"
     }
   ]
 }
