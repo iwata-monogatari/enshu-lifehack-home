@@ -151,7 +151,7 @@
     },
     "hamamatsu": {
       "name": "浜松",
-      "checkedAt": "2026-11-28T06:02:30.030Z",
+      "checkedAt": "2026-11-28T06:07:25.256Z",
       "events": [
         {
           "area": "浜松",
@@ -178,6 +178,19 @@
           "checkedAt": "2026-11-28T06:02:30.030Z",
           "status": "scheduled",
           "endsAt": "2026-12-06T17:00:00+09:00"
+        },
+        {
+          "area": "浜松",
+          "title": "ジュビロ磐田パブリックビューイング＠Any",
+          "start": "2026-12-05",
+          "end": "2026-12-05",
+          "venue": "Any（浜松市中央区千歳町）",
+          "hours": "13:00〜16:00予定",
+          "note": "観覧無料・予約不要",
+          "url": "https://hamamatsu-machinaka.jp/news/58897/",
+          "checkedAt": "2026-11-28T06:07:25.256Z",
+          "status": "scheduled",
+          "endsAt": "2026-12-05T16:00:00+09:00"
         }
       ]
     },
@@ -304,7 +317,7 @@
     },
     "enshu": {
       "name": "遠州",
-      "checkedAt": "2026-11-28T06:02:30.030Z",
+      "checkedAt": "2026-11-28T06:07:25.256Z",
       "events": [
         {
           "area": "森町",
@@ -455,6 +468,19 @@
           "checkedAt": "2026-11-28T06:02:30.030Z",
           "status": "scheduled",
           "endsAt": "2026-12-06T17:00:00+09:00"
+        },
+        {
+          "area": "浜松",
+          "title": "ジュビロ磐田パブリックビューイング＠Any",
+          "start": "2026-12-05",
+          "end": "2026-12-05",
+          "venue": "Any（浜松市中央区千歳町）",
+          "hours": "13:00〜16:00予定",
+          "note": "観覧無料・予約不要",
+          "url": "https://hamamatsu-machinaka.jp/news/58897/",
+          "checkedAt": "2026-11-28T06:07:25.256Z",
+          "status": "scheduled",
+          "endsAt": "2026-12-05T16:00:00+09:00"
         },
         {
           "area": "菊川",
