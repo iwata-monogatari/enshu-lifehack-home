@@ -34,7 +34,7 @@
     },
     "iwata": {
       "name": "磐田",
-      "checkedAt": "2026-11-28T06:02:30.030Z",
+      "checkedAt": "2026-11-28T06:48:58.107Z",
       "events": [
         {
           "area": "磐田",
@@ -81,9 +81,9 @@
           "end": "2026-11-29",
           "venue": "福田漁港",
           "hours": "7:00〜10:00",
-          "note": "売り切れ次第終了の店舗があります",
+          "note": "天候や状況により日程変更あり。店舗によって売り切れ次第終了",
           "url": "https://kanko-iwata.jp/2026/11/post-16457/",
-          "checkedAt": "2026-11-28T06:02:30.030Z",
+          "checkedAt": "2026-11-28T06:48:58.107Z",
           "status": "weather",
           "endsAt": "2026-11-29T10:00:00+09:00"
         }
@@ -91,7 +91,7 @@
     },
     "fukuroi": {
       "name": "袋井",
-      "checkedAt": "2026-11-28T06:02:30.030Z",
+      "checkedAt": "2026-11-28T06:48:58.107Z",
       "events": [
         {
           "area": "袋井",
@@ -116,6 +116,32 @@
           "url": "https://www.city.fukuroi.shizuoka.jp/soshiki/14/3/shogyo/1422534685441.html",
           "checkedAt": "2026-11-28T06:02:30.030Z",
           "status": "weather"
+        },
+        {
+          "area": "袋井",
+          "title": "エコパココフリーマーケット2026",
+          "start": "2026-12-05",
+          "end": "2026-12-05",
+          "venue": "エコパスタジアム 外周・エントランス広場",
+          "hours": "10:00〜14:00",
+          "note": "雨天中止。当日朝6時にエコパ公式サイトのトップページなどで開催可否を発表",
+          "url": "https://www.ecopa.jp/event2/fleamarket",
+          "checkedAt": "2026-11-28T06:48:58.107Z",
+          "status": "weather",
+          "endsAt": "2026-12-05T14:00:00+09:00"
+        },
+        {
+          "area": "袋井",
+          "title": "エコパココフリーマーケット2026",
+          "start": "2026-12-06",
+          "end": "2026-12-06",
+          "venue": "エコパスタジアム 外周・エントランス広場",
+          "hours": "10:00〜14:00",
+          "note": "雨天中止。当日朝6時にエコパ公式サイトのトップページなどで開催可否を発表",
+          "url": "https://www.ecopa.jp/event2/fleamarket",
+          "checkedAt": "2026-11-28T06:48:58.107Z",
+          "status": "weather",
+          "endsAt": "2026-12-06T14:00:00+09:00"
         }
       ]
     },
@@ -259,7 +285,7 @@
     },
     "kosai": {
       "name": "湖西",
-      "checkedAt": "2026-11-28T06:02:30.030Z",
+      "checkedAt": "2026-11-28T06:48:58.107Z",
       "events": [
         {
           "area": "湖西",
@@ -281,9 +307,9 @@
           "end": "2026-12-25",
           "venue": "新居関所史料館",
           "hours": "9:00〜16:30",
-          "note": "月曜休館",
-          "url": "https://www.city.kosai.shizuoka.jp/soshikiichiran/kanko/event/1534.html",
-          "checkedAt": "2026-11-28T06:02:30.030Z",
+          "note": "月曜休館。大人400円、小中学生150円",
+          "url": "https://www.city.kosai.shizuoka.jp/kosodate_kyoiku/bunka_shogaigakushu/3614.html",
+          "checkedAt": "2026-11-28T06:48:58.107Z",
           "status": "scheduled",
           "endsAt": "2026-12-25T16:30:00+09:00"
         },
@@ -317,7 +343,7 @@
     },
     "enshu": {
       "name": "遠州",
-      "checkedAt": "2026-11-28T06:10:05.830Z",
+      "checkedAt": "2026-11-28T06:48:58.107Z",
       "events": [
         {
           "area": "森町",
@@ -389,9 +415,9 @@
           "end": "2026-11-29",
           "venue": "福田漁港",
           "hours": "7:00〜10:00",
-          "note": "売り切れ次第終了の店舗があります",
+          "note": "天候や状況により日程変更あり。店舗によって売り切れ次第終了",
           "url": "https://kanko-iwata.jp/2026/11/post-16457/",
-          "checkedAt": "2026-11-28T06:02:30.030Z",
+          "checkedAt": "2026-11-28T06:48:58.107Z",
           "status": "weather",
           "endsAt": "2026-11-29T10:00:00+09:00"
         },
@@ -418,6 +444,32 @@
           "url": "https://www.city.fukuroi.shizuoka.jp/soshiki/14/3/shogyo/1422534685441.html",
           "checkedAt": "2026-11-28T06:02:30.030Z",
           "status": "weather"
+        },
+        {
+          "area": "袋井",
+          "title": "エコパココフリーマーケット2026",
+          "start": "2026-12-05",
+          "end": "2026-12-05",
+          "venue": "エコパスタジアム 外周・エントランス広場",
+          "hours": "10:00〜14:00",
+          "note": "雨天中止。当日朝6時にエコパ公式サイトのトップページなどで開催可否を発表",
+          "url": "https://www.ecopa.jp/event2/fleamarket",
+          "checkedAt": "2026-11-28T06:48:58.107Z",
+          "status": "weather",
+          "endsAt": "2026-12-05T14:00:00+09:00"
+        },
+        {
+          "area": "袋井",
+          "title": "エコパココフリーマーケット2026",
+          "start": "2026-12-06",
+          "end": "2026-12-06",
+          "venue": "エコパスタジアム 外周・エントランス広場",
+          "hours": "10:00〜14:00",
+          "note": "雨天中止。当日朝6時にエコパ公式サイトのトップページなどで開催可否を発表",
+          "url": "https://www.ecopa.jp/event2/fleamarket",
+          "checkedAt": "2026-11-28T06:48:58.107Z",
+          "status": "weather",
+          "endsAt": "2026-12-06T14:00:00+09:00"
         },
         {
           "area": "掛川",
@@ -553,9 +605,9 @@
           "end": "2026-12-25",
           "venue": "新居関所史料館",
           "hours": "9:00〜16:30",
-          "note": "月曜休館",
-          "url": "https://www.city.kosai.shizuoka.jp/soshikiichiran/kanko/event/1534.html",
-          "checkedAt": "2026-11-28T06:02:30.030Z",
+          "note": "月曜休館。大人400円、小中学生150円",
+          "url": "https://www.city.kosai.shizuoka.jp/kosodate_kyoiku/bunka_shogaigakushu/3614.html",
+          "checkedAt": "2026-11-28T06:48:58.107Z",
           "status": "scheduled",
           "endsAt": "2026-12-25T16:30:00+09:00"
         },
