@@ -1,0 +1,5 @@
+/weekend-events-data.json
+  Access-Control-Allow-Origin: *
+  Cache-Control: no-store
+/weekend-events.js
+  Cache-Control: public, max-age=300
