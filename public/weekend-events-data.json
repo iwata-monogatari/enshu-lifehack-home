@@ -121,7 +121,7 @@
     },
     "kakegawa": {
       "name": "掛川",
-      "checkedAt": "2026-11-28T06:02:30.030Z",
+      "checkedAt": "2026-11-28T06:10:05.830Z",
       "events": [
         {
           "area": "掛川",
@@ -132,7 +132,7 @@
           "hours": "9:00〜17:00",
           "note": "最終入館16:30。一般200円、中学生以下無料",
           "url": "https://www.kakegawa-kankou.com/news/27044/",
-          "checkedAt": "2026-11-28T06:02:30.030Z",
+          "checkedAt": "2026-11-28T06:10:05.830Z",
           "status": "scheduled"
         },
         {
@@ -144,7 +144,7 @@
           "hours": "",
           "note": "ウインドサーフィン大会",
           "url": "https://www.kakegawa-kankou.com/news/26935/",
-          "checkedAt": "2026-11-28T06:02:30.030Z",
+          "checkedAt": "2026-11-28T06:10:05.830Z",
           "status": "weather"
         }
       ]
@@ -317,7 +317,7 @@
     },
     "enshu": {
       "name": "遠州",
-      "checkedAt": "2026-11-28T06:07:25.256Z",
+      "checkedAt": "2026-11-28T06:10:05.830Z",
       "events": [
         {
           "area": "森町",
@@ -428,7 +428,7 @@
           "hours": "9:00〜17:00",
           "note": "最終入館16:30。一般200円、中学生以下無料",
           "url": "https://www.kakegawa-kankou.com/news/27044/",
-          "checkedAt": "2026-11-28T06:02:30.030Z",
+          "checkedAt": "2026-11-28T06:10:05.830Z",
           "status": "scheduled"
         },
         {
@@ -440,7 +440,7 @@
           "hours": "",
           "note": "ウインドサーフィン大会",
           "url": "https://www.kakegawa-kankou.com/news/26935/",
-          "checkedAt": "2026-11-28T06:02:30.030Z",
+          "checkedAt": "2026-11-28T06:10:05.830Z",
           "status": "weather"
         },
         {
