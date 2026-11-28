@@ -1,6 +1,7 @@
 # 遠州ライフハック 親サイト（enshu-lifehack.com）
 # 静的アセット配信のみ（磐田と同じ assets-only 構成）。
 name = "enshu-lifehack-home"
+main = "src/weekend-worker.mjs"
 compatibility_date = "2025-06-01"
 
 # カスタムドメイン（apex と www、どちらも同じトップを配信）。
@@ -16,5 +17,7 @@ routes = [
 command = "node scripts/build_feed.mjs"
 
 [assets]
+binding = "ASSETS"
+run_worker_first = ["/weekend-events-data.json", "/weekend-events/"]
 directory = "./public"
 not_found_handling = "404-page"
