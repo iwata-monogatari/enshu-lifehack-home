@@ -21,6 +21,7 @@ assert.equal(await (await worker.fetch(req("/existing"),env)).text(),"unrelated"
 globalThis.fetch=async()=>new Response("bad",{status:500});
 assert.equal((await worker.fetch(req("/weekend-events/"),env)).headers.get("X-Weekend-Source"),"backup");
 p.regions.enshu.checkedAt="2000-01-01T00:00:00Z";
-assert.equal((await worker.fetch(req("/weekend-events/"),env)).status,503);
+assert.equal((await worker.fetch(req("/weekend-events-data.json"),env)).status,503);
+assert.equal((await worker.fetch(req("/weekend-events/"),env)).headers.get("X-Weekend-Source"),"browser");
 console.log("PASS eight regions, HTML escaping, cancelled/elapsed/stale exclusions, JSON CORS, HEAD, unrelated, backup, expiry");
 

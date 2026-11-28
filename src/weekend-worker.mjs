@@ -1,4 +1,5 @@
 const RAW = "https://raw.githubusercontent.com/iwata-monogatari/enshu-lifehack-home/main/public";
+const API = "https://api.github.com/repos/iwata-monogatari/enshu-lifehack-home/contents/public/weekend-events-data.json?ref=main";
 const DATA = "/weekend-events-data.json", HUB = "/weekend-events/";
 const cities = ["morimachi","iwata","fukuroi","kakegawa","hamamatsu","kikugawa","omaezaki","kosai","enshu"];
 const maxBytes = 300000;
@@ -50,16 +51,25 @@ export default {
     if((!data&&path!==HUB)||!["GET","HEAD"].includes(request.method)) return env.ASSETS.fetch(request);
     const headers={"Content-Type":data?"application/json; charset=utf-8":"text/html; charset=utf-8","Cache-Control":"public, max-age=120","X-Content-Type-Options":"nosniff",...(data?{"Access-Control-Allow-Origin":"*"}:{})};
     let body=null, source=null;
+    let failure="unavailable";
+    const signal=new AbortController();
+    const timer=setTimeout(()=>signal.abort(),3500);
+    const read=async (url,accept)=>{
+      const r=await fetch(url,{headers:{"User-Agent":"Enshu-Lifehack-Weekend/1.0",...(accept?{"Accept":accept}:{})},signal:signal.signal});
+      if(!r.ok) throw new Error("upstream-"+r.status);
+      return load(r);
+    };
     try{
-      body=await load(await fetch(RAW+DATA,{redirect:"error",signal:AbortSignal.timeout(4000),cf:{cacheEverything:true,cacheTtl:120}}));
+      body=await Promise.any([read(RAW+DATA),read(API,"application/vnd.github.raw+json")]);
       source="repository";
-    } catch {}
+    } catch(e) { failure=[...(e.errors||[])].map(a=>/upstream-\d+/.exec(a.message)?.[0]||a.name).join(",").slice(0,80)||"unavailable"; }
+    finally{ clearTimeout(timer); }
     if(body===null){
       try{body=await load(await env.ASSETS.fetch(new Request(new URL(DATA,request.url),{method:"GET"})));source="backup";} catch {}
     }
-    if(body!==null) return new Response(request.method==="HEAD"?null:(data?JSON.stringify(body):hub(body)),{headers:{...headers,"X-Weekend-Source":source}});
-    const message=data?'{"error":"temporarily_unavailable"}':'<!doctype html><html lang="ja"><meta charset="utf-8"><title>遠州の週末イベント</title><h1>遠州の週末イベント</h1><p>最新情報を確認できていません。時間をおいてもう一度ご確認ください。</p><p><a href="/">遠州ライフハックへ</a></p></html>';
-    return new Response(request.method==="HEAD"?null:message,{status:503,headers:{...headers,"Cache-Control":"no-store","Retry-After":"300"}});
+    if(body!==null) return new Response(request.method==="HEAD"?null:(data?JSON.stringify(body):hub(body)),{headers:{...headers,"X-Weekend-Source":source,...(source==="backup"?{"X-Weekend-Upstream":failure}:{})}});
+    if(!data) return new Response(request.method==="HEAD"?null:hub({regions:{}}),{headers:{...headers,"Cache-Control":"no-store","X-Weekend-Source":"browser"}});
+    const message='{"error":"temporarily_unavailable"}';
+    return new Response(request.method==="HEAD"?null:message,{status:503,headers:{...headers,"Cache-Control":"no-store","Retry-After":"300","X-Weekend-Upstream":failure}});
   },
 };
-

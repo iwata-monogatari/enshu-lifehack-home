@@ -65,16 +65,23 @@
   }
   async function refresh(){
     const hour=new Date().toISOString().slice(0,13);
-    try{
-      const r=await fetch(host+"/weekend-events-data.json?v="+encodeURIComponent(hour),{cache:"no-store",credentials:"omit"});
+    const read=async base=>{
+      const r=await fetch(base+"?v="+encodeURIComponent(hour),{cache:"no-store",credentials:"omit"});
       if(!r.ok) throw new Error("unavailable");
       const next=await r.json();
-      if(next.schema!==1||typeof next.regions!=="object"||!next.regions) throw new Error("invalid");
-      payload=next;
-    } catch { /* A prior payload remains visible only within its own freshness limit. */ }
+      if(next.schema!==1||!next.regions||!valid(next.regions.enshu?.checkedAt,Date.now())) throw new Error("invalid");
+      return next;
+    };
+    const sources=[host+"/weekend-events-data.json","https://raw.githubusercontent.com/iwata-monogatari/enshu-lifehack-home/main/public/weekend-events-data.json"];
+    await Promise.all(sources.map(async u=>{
+      try{
+        const next=await read(u);
+        if(!payload||Date.parse(next.regions.enshu.checkedAt)>=Date.parse(payload.regions.enshu.checkedAt)) payload=next;
+        render();
+      }catch{}
+    }));
     render();
   }
-  render();
   refresh();
   setInterval(refresh,5*60000);
   document.addEventListener("visibilitychange",()=>{if(!document.hidden) refresh();});
